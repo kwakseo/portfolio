@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<head>
+	<link rel="stylesheet" href="portfolio.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+	<script>
+	  WebFont.load({
+	    google: {
+	      families: ['Work Sans:200,300,500,600', 'Nunito:300,400,700', 'Muli:300,400,700']
+	    }
+	  });
+	</script>
+	<div id="title">
+		<p class = "title" style="color: #111111"> SEO YEON&nbsp;</p>
+		<p class = "title" style="color: #bbbbbb"> RACHEL&nbsp;</p>
+		<p class = "title" style="color: #111111"> KWAK </p>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="navitem.js"></script>
+
+</head>
+<body>
+
+	<div id="navbar"></div>
+	<div id="content">
+		<div id="projects" class="page">
+			<div id="think_icon" class="project_icon" onclick="show_page('think')"></div>
+			<div class="project_icon"></div>
+			<div class="project_icon"></div>
+			<div class="project_icon"></div>
+			<div class="project_icon"></div>
+			<div class="project_icon"></div>
+		</div>
+		<div id="think">
+			<p>THINK</p>
+		</div>
+		<div id="me" class="page">
+			<p>Sometimes, it is easiest to understand someone by first learning about their life experiences &mdash; so, here are just a few of mine that have shaped me into who I am today.</p>
+		</div>
+		<div id="resume" class="page"></div>
+	</div>
+	<script>
+		navitem(1, "projects");
+		navitem(2, "me", true);
+		navitem(3, "resume");
+		show_page("projects");
+		toggle_navitem("projects");
+		var navbar = document.getElementById("navbar");
+		var content = document.getElementById("content");
+
+	</script>
+</body>
+</html>

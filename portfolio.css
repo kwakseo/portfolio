@@ -1,10 +1,10 @@
 body {
 	background-color: #f7f7f7;
-	font-family: Work Sans;
+	font-family: Muli;
 	font-weight: 300;
+	font-size: 18px;
 
 }
-
 
 #title {
 	display: flex;
@@ -12,6 +12,8 @@ body {
 	text-align: center;
 	justify-content: center;
 	margin: 42px 0px 14px 0px;
+	font-family: Work Sans;
+	font-weight: 500;
 }
 
 #navbar {
@@ -47,7 +49,8 @@ body {
 }
 
 .navitem_title {
-	font-weight: 12px;
+	font-family: Work Sans;
+	font-size: 16px;
 	margin: auto;
 	text-align: center;
 	color: #111111;
@@ -91,6 +94,7 @@ body {
 .page {
 	display: none;
 }
+
 
 
 

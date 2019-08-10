@@ -7,17 +7,8 @@ function navitem(order, title, hi=false) {
 	p.className = "navitem_title";
 	div.appendChild(p);
 	document.getElementById("navbar").appendChild(div);
-	if (hi) {
-		$('#me_nav').click(function(){
-    		$('#content').load('me2.html');
-    		console.log('me_nav hello');
-		});
-	}
-	else {
-		div.onclick = function() {show_page(title); toggle_navitem(title)};
-	
-	}
-	
+	// div.onclick = function() {show_page(title); toggle_navitem(title)};
+	div.onclick = function () {checkURL(title);}
 
 }
 
@@ -66,3 +57,4 @@ function toggle_navitem(title) {
     	}
 	});
 }
+
