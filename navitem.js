@@ -58,3 +58,9 @@ function toggle_navitem(title) {
 	});
 }
 
+navitem(1, "projects");
+navitem(2, "me", true);
+navitem(3, "resume");
+show_page("projects");
+toggle_navitem("projects");
+
