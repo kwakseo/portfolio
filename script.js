@@ -29,7 +29,7 @@ function checkURL(hash)
 function loadPage(url)  //the function that loads pages via AJAX
 {
 
-    $('#loading').css('visibility','visible');  //show the rotating gif animation
+    // $('#loading').css('visibility','visible');  //show the rotating gif animation
 
     $.ajax({    //create an ajax request to load_page.php
         type: "POST",
