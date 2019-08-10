@@ -64,5 +64,5 @@ $(document).ready(function(){
 	navitem(3, "resume");
 	show_page("projects");
 	toggle_navitem("projects");
-}
+});
 
