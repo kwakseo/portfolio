@@ -13,6 +13,7 @@ $(document).ready(function(){ //executed after the page has loaded
 });
 
 var lasturl=""; //here we store the current URL hash
+console.log(lasturl);
 
 function checkURL(hash)
 {
