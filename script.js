@@ -45,7 +45,7 @@ function loadPage(url)  //the function that loads pages via AJAX
         data: "page=" + url,  //with the page number as a parameter
         dataType: "html",   //expect html to be returned
         success: function(msg){
-
+            console.log(msg + " ajax success");
             if(parseInt(msg)!=0)    //if no errors
             {
                 $('#content').html(msg);    //load the returned html into pageContet
