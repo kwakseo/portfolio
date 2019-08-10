@@ -1,3 +1,4 @@
+var default_content="";
 $(document).ready(function(){ //executed after the page has loaded
 
     checkURL(); //check if the URL has a reference to a page and load it
@@ -18,7 +19,7 @@ console.log(lasturl);
 function checkURL(hash)
 {
     if(!hash) hash=window.location.hash;    //if no parameter is provided, use the hash value from the current address
-
+    console.log(hash + " hash");
     if(hash != lasturl) // if the hash value has changed
     {
         lasturl=hash;   //update the current hash
