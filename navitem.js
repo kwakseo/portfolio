@@ -8,7 +8,7 @@ function navitem(order, title, hi=false) {
 	div.appendChild(p);
 	document.getElementById("navbar").appendChild(div);
 	// div.onclick = function() {show_page(title); toggle_navitem(title)};
-	div.onclick = function () {checkURL(title)};
+	div.onclick = function () {checkURL("#"+title)};
 
 }
 

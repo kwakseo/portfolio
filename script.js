@@ -8,7 +8,7 @@ $(document).ready(function(){ //executed after the page has loaded
     //         checkURL(this.hash);    //.. and assign them a new onclick event, using their own hash as a parameter (#page1 for example)
 
     // });
-
+    default_content = $('#content').html();
     setInterval("checkURL()",250);  //check for a change in the URL every 250 ms to detect if the history buttons have been used
 
 });
@@ -18,12 +18,20 @@ console.log(lasturl);
 
 function checkURL(hash)
 {
-    if(!hash) hash=window.location.hash;    //if no parameter is provided, use the hash value from the current address
-    console.log(hash + " hash");
-    if(hash != lasturl) // if the hash value has changed
+    if(!hash) hash=window.location.hash;
+    
+    if(hash != lasturl)
     {
-        lasturl=hash;   //update the current hash
-        loadPage(hash); // and load the new page
+        lasturl=hash;
+        
+        // FIX - if we've used the history buttons to return to the homepage,
+        // fill the pageContent with the default_content
+        
+        if(hash=="")
+        $('#content').html(default_content);
+        
+        else
+        loadPage(hash);
     }
 }
 
