@@ -45,7 +45,7 @@ function loadPage(url)  //the function that loads pages via AJAX
     $.ajax({    //create an ajax request to load_page.php
         type: "POST",
         url: "load_page.php",
-        data: 'page=' + url,  //with the page number as a parameter
+        data: "{'page': " + url + "}",  //with the page number as a parameter
         dataType: "html",   //expect html to be returned
         success: function(msg){
             console.log(msg + " ajax success");
