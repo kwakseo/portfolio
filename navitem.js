@@ -1,14 +1,17 @@
 function navitem(order, title, hi=false) {
 	var div = document.createElement("div");
 	var p = document.createElement("p");
+	var a = document.createElement("a");
+	a.href = title + ".html";
 	div.className = "navitem";
 	div.id = title + "_nav";
 	p.innerHTML = title.toUpperCase();
 	p.className = "navitem_title";
 	div.appendChild(p);
-	document.getElementById("navbar").appendChild(div);
+	a.appendChild(div);
+	document.getElementById("navbar").appendChild(a);
 	// div.onclick = function() {show_page(title); toggle_navitem(title)};
-	div.onclick = function () {checkURL(title)};
+	// div.onclick = function () {checkURL(title)};
 
 }
 
@@ -57,12 +60,4 @@ function toggle_navitem(title) {
     	}
 	});
 }
-
-$(document).ready(function(){
-	navitem(1, "projects");
-	navitem(2, "me", true);
-	navitem(3, "resume");
-	show_page("projects");
-	toggle_navitem("projects");
-});
 
