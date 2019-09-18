@@ -611,11 +611,13 @@ canvas {
 }
 
 .description_container {
+	flex: 2;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: center;
 	max-width: 500px;
+	width: 100%;
 }
 /* -------------------------------- 
 
@@ -747,6 +749,7 @@ Main Components
   font-family: Work Sans;
   font-weight: 500px;
   letter-spacing: 1px;
+  font-size: 20px;
   /* fix bug on Safari - text flickering while timeline translates */
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
@@ -817,6 +820,10 @@ Main Components
   	width: 300px;
 	height: 300px;
 /*	margin: 0px 5px 20px 5px;*/
+  }
+
+  .cd-horizontal-timeline .events a {
+  	font-size: 16px;
   }
 
 }
@@ -957,18 +964,18 @@ Main Components
 }
 .cd-horizontal-timeline .events-content h2 {
   font-weight: 500;
-  font-size: 1.5em;
+  font-size: 18px;
   margin: 0px;
 
 }
 .cd-horizontal-timeline .events-content em {
 /*  display: block;*/
   font-style: italic;
-  font-size: 1em;
+  font-size: 16px;
 /*  margin: 10px auto;*/
 }
 .cd-horizontal-timeline .events-content p {
-  font-size: 1.2em;
+  font-size: 18px;
 }
 .cd-horizontal-timeline .events-content em, .cd-horizontal-timeline .events-content p {
 /*  line-height: 1;*/
