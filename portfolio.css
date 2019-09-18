@@ -168,13 +168,14 @@ canvas {
 .project_icon {
 
 	display: flex;
-	min-width: 12em;
-	min-height: 12em;
-	width: 30%;
+	width: 400px;
+	height: 400px;
+/*	width: 30%;*/
+
 /*	min-width: 220px;
 	height: 220px;
 	border-radius: 300px;*/
-	margin: 50px 5px 20px 5px;
+	margin: 0px 5px 20px 5px;
 /*	border: solid 5px #ededed;*/
 }
 
@@ -812,9 +813,10 @@ Main Components
   }
 
   .project_icon {
-  	min-width: 270px;
-	min-height: 270px;
-	margin: 0px 5px 20px 5px;
+/*  	width: 30%;*/
+  	width: 300px;
+	height: 300px;
+/*	margin: 0px 5px 20px 5px;*/
   }
 
 }
