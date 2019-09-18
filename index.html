@@ -1,54 +1,1026 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<head>
-	<link rel="stylesheet" href="portfolio.css">
+	<link rel="icon" href="images/favicon.png" />
+	<link rel="stylesheet" href="portfolio.css" />
+	<link rel="stylesheet" href="node_modules/beerslider/dist/BeerSlider.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 	<script>
 	  WebFont.load({
 	    google: {
-	      families: ['Work Sans:200,300,500,600', 'Nunito:300,400,700', 'Muli:300,400,700']
+	      families: ['Work Sans:200,300,500,600', 'Lato:100,300,700', 'Open Sans:300,400', 'Nunito:200,300,400']
 	    }
 	  });
 	</script>
 	<div id="title">
-		<p class = "title" style="color: #111111"> SEO YEON&nbsp;</p>
+		<p class = "title" style="color: #000000"> SEO YEON&nbsp;</p>
 		<p class = "title" style="color: #bbbbbb"> RACHEL&nbsp;</p>
-		<p class = "title" style="color: #111111"> KWAK </p>
+		<p class = "title" style="color: #000000"> KWAK </p>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script type="text/javascript" src="navitem.js"></script>
+	<script type="text/javascript" src="encoder.js"></script>
+
 	
 
 </head>
 <body>
 
-	<div id="navbar"></div>
-	<div id="content">
-		<div id="projects" class="page">
-			<div id="think_icon" class="project_icon" onclick="show_page('think')"></div>
-			<div class="project_icon"></div>
-			<div class="project_icon"></div>
-			<div class="project_icon"></div>
-			<div class="project_icon"></div>
-			<div class="project_icon"></div>
+<!-------------------- navbar -------------------->
+
+	<div id="navbar">
+		<div class="navitem" id="projects_nav" onclick="show_page('projects');">
+			<p class="navitem_title">PROJECTS</p>
 		</div>
-		<div id="think">
-			<p>THINK</p>
+		<div class="navitem" id="me_nav" onclick="show_page('me');">
+			<p class="navitem_title">ME</p>
+		</div>
+		<div class="navitem" id="resume_nav" onclick="show_page('resume');">
+			<p class="navitem_title">RESUME</p>
+		</div>
+	</div>
+
+
+<!-------------------- content -------------------->
+
+	<div id="content">
+
+	<!-------------------- projects -------------------->
+
+		<div id="projects" class="page">
+
+			<img src="images/teachbot_icon.png" class="project_icon" onclick="show_page('teachbot')">
+			<img src="images/ghost_icon.png" class="project_icon" onclick="show_page('ghost')">
+			<img src="images/markit_icon.png" class="project_icon" onclick="show_page('markit')">
+			<img src="images/mic_icon.png" class="project_icon" onclick="show_page('mic')">
+			<img src="images/techx_apply_icon.png" class="project_icon" onclick="show_page('techx_apply')">
+			<img src="images/think_icon.png" class="project_icon" onclick="show_page('think')">
+			
+			
+
 		</div>
 
-		<div id="resume" class="page"></div>
+	<!-------------------- me -------------------->
+
+		<div id="me" class="page">
+
+			<div class="row profile">
+				<div class="prof_pic"></div>
+				<p style="margin: auto 25px; flex: 2; white-space: pre-wrap;">Hi, I'm Rachel!
+				<br>I am a UI/UX designer who loves to create intuitive designs and fulfilling user experiences.</p>
+<!-- 				<div class="prof_pic"></div> -->
+			</div>
+
+			<h1>TIMELINE OF ME</h1>
+			<p style="margin: 0px 25px 50px 25px;">Sometimes, the best way to get to know someone is by first learning about their life experiences &mdash; so, here are just a few of mine that have shaped me into who I am today.</p>
+			
+			<section class="cd-horizontal-timeline">
+				<div class="timeline">
+					<div class="events-wrapper">
+						<div class="events">
+							<ol>
+								<li><a href="#0" data-date="09/01/2000" class="selected">1999</a></li>
+								<li><a href="#0" data-date="10/01/2000">2001</a></li>
+								<li><a href="#0" data-date="13/01/2000">2006</a></li>
+								<li><a href="#0" data-date="16/01/2000">2013 JUL</a></li>
+								<li><a href="#0" data-date="17/01/2000">2013 AUG</a></li>
+								<li><a href="#0" data-date="21/01/2000">2016 MAR</a></li>
+								<li><a href="#0" data-date="22/01/2000">2016 JUL</a></li>
+								<li><a href="#0" data-date="23/01/2000">2016 AUG</a></li>
+								<li><a href="#0" data-date="25/01/2000">2017 3.14</a></li>
+								<li><a href="#0" data-date="27/01/2000">2017 SEP</a></li>
+								<li><a href="#0" data-date="28/01/2000">2017 DEC</a></li>
+								<li><a href="#0" data-date="30/01/2000">2018 JUN</a></li>
+								<li><a href="#0" data-date="31/01/2000">2018 AUG</a></li>
+								<li><a href="#0" data-date="32/01/2000">2018 DEC</a></li>
+								<li><a href="#0" data-date="33/01/2000">2019 JAN</a></li>
+							</ol>
+
+							<span class="filling-line" aria-hidden="true"></span>
+						</div> <!-- .events -->
+					</div> <!-- .events-wrapper -->
+						
+					<ul class="cd-timeline-navigation">
+						<li><a href="#0" class="prev inactive"></a></li>
+						<li><a href="#0" class="next"></a></li>
+					</ul> <!-- .cd-timeline-navigation -->
+				</div> <!-- .timeline -->
+
+				<div class="events-content">
+					<ol>
+						<li class="selected" data-date="09/01/2000">
+
+							<div class="row">
+								<img src="images/cake2.png" class="timeline_icon">
+								<div class="description_container">
+									<h2>1999</h2>
+									<p>I was born in Seoul, South Korea</p>
+								</div>
+							</div>
+
+						</li>
+
+						<li data-date="10/01/2000">
+
+							<div class="row">
+								<img src="images/plane2.png" class="timeline_icon">
+								<div class="description_container">
+									<h2>2001</h2>
+									<p>My family immigrated to the United States</p>
+								</div>
+							</div>
+
+						</li>
+
+						<li data-date="13/01/2000">
+
+							<div class="row">
+								<div class="timeline_pic pinky_pic"></div>
+								<div class="description_container">
+									<h2>2006</h2>
+									<p>We adopted Pinky</p>
+								</div>
+							</div>
+
+						</li>
+
+						<li data-date="16/01/2000">
+
+							<div class="row">
+								<img src="images/flag2.png" class="timeline_icon">
+								<div class="description_container">
+									<h2>2013 JUL</h2>
+									<p>My family became official US citizens</p>
+								</div>
+							</div>
+
+						</li>
+
+						<li data-date="17/01/2000">
+							
+							<div class="row">
+								<div class="timeline_pic htpa_pic"></div>
+								<div class="description_container">
+									<h2>2013 AUG</h2>
+									<p>I started attending a tiny, public high school in Wilmington, CA</p>
+									<em>It was made of seven bungalows, built on two old tennis courts</em>
+								</div>
+							</div>
+
+						</li>
+
+						<li data-date="21/01/2000">
+							
+							<div class="row">
+								<div class="timeline_pic art_pic"></div>
+								<div class="description_container">
+									<h2>2016 MAR</h2>
+									<p>I entered my first art competition</p>
+									<em>And even won a thing!</em>
+
+								</div>
+							</div>
+
+						</li>
+
+						<li data-date="22/01/2000">
+							
+							<div class="row">
+								<div class="timeline_pic digital_pic"></div>
+								<div class="description_container">
+									<h2>2016 JUL</h2>
+									<p>I got my first digital tablet</p>
+									<em>A Wacom Intuos S, which I still use &mdash; this was my first drawing with it!</em>
+								</div>
+							</div>
+
+						</li>
+
+						<li data-date="23/01/2000">
+
+							<div class="row">
+								<img src="images/laptop2.png" class="timeline_icon">
+								<div class="description_container">
+									<h2>2016 AUG</h2>
+									<p>My high school started its first computer science class</p>
+									<em>Check out my first coding project <a href="https://studio.code.org/projects/applab/w9s1oRfz_A26fBUwKeIoYhfWw2A7jQDrKbidDNKazD4" target="_blank">here!</a></em>
+								</div>
+							</div>
+
+						</li>
+
+						<li data-date="25/01/2000">
+
+							<div class="row">
+								<img src="images/mit2.png" class="timeline_icon">
+								<div class="description_container">
+									<h2>2017 3.14</h2>
+									<p>I got into MIT &mdash; my home for the next four years</p>
+								</div>
+							</div>
+
+						</li>
+
+						<li data-date="27/01/2000">
+
+							<div class="row">
+								<div class="timeline_pic dance_pic"></div>
+								<div class="description_container">
+									<h2>2017 SEP</h2>
+									<p>I joined a dance team for the first time</p>
+								</div>
+							</div>
+
+						</li>
+
+						<li data-date="28/01/2000">
+
+							<div class="row">
+								<div class="timeline_pic snow_pic"></div>
+								<div class="description_container">
+									<h2>2017 DEC</h2>
+									<p>I saw snowfall for the first time</p>
+									<em>It was pretty magical</em>
+								</div>
+							</div>
+
+						</li>
+
+						<li data-date="30/01/2000">
+							
+							<div class="row">
+								<div class="timeline_pic kixlab_pic"></div>
+								<div class="description_container">
+									<h2>2018 JUN</h2>
+									<p>I joined the KIXLAB (KAIST Interaction Lab) family</p>
+								</div>
+							</div>
+
+						</li>
+
+						<li data-date="31/01/2000">
+							
+							<div class="row">
+								<img src="images/draw2.png" class="timeline_icon">
+								<div class="description_container">
+									<h2>2018 AUG</h2>
+									<p>I officially switched my major from Computer Science to Art and Design</p>
+								</div>
+							</div>
+
+						</li>
+
+						<li data-date="32/01/2000">
+
+							<div class="row">
+								<img src="images/present2.png" class="timeline_icon">
+								<div class="description_container">
+									<h2>2018 DEC</h2>
+									<p>I presented to professional designers for the first time</p>
+								</div>
+							</div>
+
+						</li>
+
+						<li data-date="33/01/2000">
+
+							<div class="row">
+								<img src="images/game2.png" class="timeline_icon">
+								<div class="description_container">
+									<h2>2019 JAN</h2>
+									<p>I designed and developed my first game with friends</p>
+									<em>Grab a friend and play it <a href="ghostfriends.heroku.com" target="_blank">here!</a></em>
+								</div>
+							</div>
+
+						</li>
+
+					</ol>
+				</div> <!-- .events-content -->
+			</section>
+
+			<h1>CONTACT</h1>
+			<p style="margin: 0px 25px 50px 25px; white-space: pre-wrap;">Want to work on something awesome together? 
+				<br>Feel free to reach me at <a href="mailto:kwakseo@mit.edu">kwakseo@mit.edu</a> for business-related (or any other) inquiries!</p>
+			<div class="footer"></div>
+
+		</div>
+
+	<!-------------------- resume -------------------->
+
+		<div id="resume" class="page">
+			<p style="margin: 50px 25px 50px 25px;">Click <a href="media/kwak_resume.pdf" target="_blank">here</a> to view my resume.</p>
+		</div>
+
+	<!-------------------- think -------------------->
+
+		<div id="think" class="page">
+
+			<div class="project_overview">
+
+				<div class="overview_section">
+					<div class="thumbnail_holder">
+						<img src="images/think_icon.png" class="thumbnail">
+					</div>
+					<p class="overview">THINK is an MIT undergraduate-run program that awards high school students who want to conduct their own research projects with funding and mentorship. With a new cycle of THINK applications approaching, our team decided to improve the usability and aesthetic of our website, since it is an essential resource that all our applicants visit to apply. </p>
+				</div>
+
+				<div class="project_tag_section">
+					<p class="project_tag">ROLE</p>
+					<p class="project_tag_info">
+						User Experience Design, User Interface Design
+					</p>
+				</div>
+
+				<div class="project_tag_section">
+					<p class="project_tag">DATE</p>
+					<p class="project_tag_info">Fall 2018</p>
+				</div>
+
+				<div class="project_tag_section">
+					<p class="project_tag">COLLABORATORS</p>
+					<p class="project_tag_info">
+						Su Yang (MIT '20), Elizabeth Zhou (MIT '21), Kathryn Jin (MIT '22)
+					</p>
+				</div>
+
+			</div>
+
+			
+			<div class="main_content">
+
+
+				<h1>INITIAL FEEDBACK COLLECTION</h1>
+				<div>
+					<p style="white-space: pre-wrap; margin: 0px 25px 60px 25px">Before beginning the redesign, a meeting was dedicated for all members of the THINK team &mdash; around 20 members &mdash; to thoroughly review the website and gather feedback about every section of the website.
+					<br>Feedback was organized by section, with the most common feedback being emphasized in bold.</p>
+					<img src="images/think_feedback.png" width="90%" height="auto" style="display: block; margin: 50px auto 20px auto">
+					</div>
+				
+
+
+				<h1>STYLE GUIDE</h1>
+				<div class="row">
+					<div style="background-image: url('images/think_styleguide.png'); background-size: contain; background-position: center; background-repeat: no-repeat; width: 500px; height: 700px; margin: 0px auto 20px auto; padding: 0px 25px"></div>
+					<p style="margin: auto 10px; flex: 2; white-space: pre-wrap; min-width: 300px;">One common critique about the old website was that it did not look cohesive due to inconsistent colors and style throughout different sections. 
+					<br>Thus, before distributing the redesign work among our team, we established a clear style guide to maintain a consistent look throughout our separate sections.
+					<br><br>This styleguide was organized by Kathryn Jin (MIT '22).</p>
+				</div>
+
+
+				<h1>SECTION REDESIGNS</h1>
+
+					<h2 style="margin-top: 10px;">HOME</h2>
+
+						<p style="white-space: pre-wrap; margin: 0px 25px 80px 25px">For the website redesign, our team focused on highlighting the most important information. 
+						<br>We accomplished this for our home page by making the most sought-out information &mdash; whether or not applications are open &mdash; highly visible and eliminating all unnecessary text around it. We also used a background image that gives a sense of what our program is about to potential applicants.</p>
+
+						<div class="compare_before">
+							<p class="compare_text_before" style="width: 25%;">BEFORE</p>
+							<img src="images/think_home_old.jpg" class="compare_image" width="75%">
+						</div>
+
+						<div class="compare_after">
+							<p class="compare_text_after" style="width: 25%;">AFTER</p>
+							<img src="images/think_home_new.jpg" class="compare_image" width="75%">
+						</div>
+
+					<h2 style="margin-top: 80px;">WINNERS</h2>
+
+						<p style="white-space: pre-wrap; margin: 0px 25px 80px 25px">One section I led the redesign for was the past THINK winning projects. 
+						<br>The new layout uses a grid-design and images that go with the project titles in order to make the text easier to digest, compared to the old design that feels crowded with text.</p>
+
+						<div class="compare_before">
+							<p class="compare_text_before" style="width: 25%">BEFORE</p>
+							<img src="images/think_winners_old.png" class="compare_image" width="75%">
+						</div>
+
+						<div class="compare_after">
+							<p class="compare_text_after" style="width: 30%; margin-bottom: 50px">AFTER</p>
+							<img src="images/think_winners_new.png" class="compare_image" width="70%">
+						</div>
+
+					<h2 style="margin-top: 80px;">TEAM</h2>
+					
+						<p style="white-space: pre-wrap; margin: 0px 25px 80px 25px">I also was in charge of redesigning the section that shows the team that organizes THINK. 
+						<br>My solution to the main problem with our old layout &mdash; the bulkiness &mdash; was to turn it into a space-efficient carousel that is easily scalable as our team grows.</p>
+
+						<div class="compare_before">
+							<p class="compare_text_before" style="width: 30%">BEFORE</p>
+							<img src="images/think_team_old.png" class="compare_image" width="70%">
+						</div>
+
+						<div class="compare_after">
+							<p class="compare_text_after" style="width: 30%; margin-bottom: 50px">AFTER</p>
+							<img src="images/think_team_new.png" class="compare_image" width="70%">
+						</div>
+
+					<p style="margin: 100px 25px; text-align: center;">The final mockup was created using Adobe Illustrator.</p>
+				
+				</div>
+				
+				<div class="footer"></div>
+
+			</div>
+
+		<!-------------------- markit -------------------->
+
+			<div id="markit" class="page">
+
+				<div class="project_overview">
+
+					<div class="overview_section">
+						<div class="thumbnail_holder">
+							<img src="images/markit_icon.png" class="thumbnail">
+						</div>
+						<p class="overview">MarkIt is a prototype review app for non-permanent marketplace vendors, created for course 4.051: <i>Human Factors in Innovation and Design Strategy</i>. It was presented to professional experiential designers from the design consultancy Continuum as well as MIT architecture faculty, and was met with enthusiastic reviews.</p>
+					</div>
+
+					<div class="project_tag_section">
+						<p class="project_tag">SKILLS</p>
+						<p class="project_tag_info">
+							Prototyping, User Experience Design, User Experience Research
+						</p>
+					</div>
+
+					<div class="project_tag_section">
+						<p class="project_tag">DATE</p>
+						<p class="project_tag_info">Fall 2018</p>
+					</div>
+
+				</div>
+
+				<div class="main_content">
+					
+					<h1>FIELD RESEARCH</h1>
+					<div class="row">
+						<p style="margin: auto 25px; padding: 0px 0px 60px 0px; flex: 2; white-space: pre-wrap; min-width: 300px;">The motivation for MarkIt came from preliminary research by visiting the Copley Square Farmers Market in Boston with several classmates. 
+						<br>Throughout our visit, we took note of difficulties we experienced while browsing and shopping. I then organized our notes into three categories to address in my project.</p>
+						<div style="background-image: url('images/markit_field_research.png'); background-size: contain; background-position: center; background-repeat: no-repeat; width: 500px; height: 460px; margin: 0px auto 20px auto; padding: 0px 25px"></div>
+					</div>
+
+					<h1>OPPORTUNITY STATEMENT</h1>
+						<p style="margin: 20px 25px;">The three categories of difficulties had a common factor, which was that they stemmed from disorientation caused by unfamiliarity with the vendors, products, and layout of the market. Thus, I decided to focus my design to answer this question:</p>
+
+						<p class="statement">How might we <strong>better inform shoppers</strong> in the farmers market 
+						<br>so that they <strong>feel more directed</strong> while shopping?</p>
+
+					<h1>STORYBOARDS + PERSONAS</h1>
+						<p style="white-space: pre-wrap; margin: 0px 25px 80px 25px;">An important consideration in deciding what product to design was that although my target demographic was first-time shoppers, I did not want to introduce a product that disrupts the experiences of those who enjoy the market as they already know it.
+						<br>Keeping this in mind, I created a storyboard visualizing a reimagined farmers market experience following two common personas for first-time shoppers.</p>
+
+						<img src="images/markit_storyboard_1.png" style="display: block; margin: 10px auto; width: 90%; max-width: 900px;">
+						<img src="images/markit_storyboard_2.png" style="display: block; margin: 10px auto 80px auto; width: 90%; max-width: 900px;">
+
+					<h1>NEED-FINDING</h1>
+						<p style="margin: 20px 25px;">While creating the storyboard, I found three forms of information that are currently unavailable and would improve the experience of first time shoppers:​</p>
+						<img src="images/markit_needs.png" style="display: block; margin: 60px auto 80px auto; width: 60%; max-width: 600px;">
+
+					<h1>FINAL PROTOTYPE</h1>
+						<p style="white-space: pre-wrap; margin: 20px 25px;">The final prototype is a product similar to existing review apps such as Yelp. However, it has implications for <strong>marketplaces</strong>, which are not well-accounted for in such products. 
+						<br>Unlike Yelp, MarkIt distinguishes reviews by specific vendors and displays the specific location of vendors' booths in the market.
+						<br>Although I envisioned a physical map in my storyboard, I ultimately decided to incorporate it into a digital solution due to the adaptability of a digital map to changes in the farmers market.</p>
+
+						<div class="row" style="justify-content: center;">
+							<div style="width: 28%; margin: 20px; min-width: 260px;">
+								<h2 style="text-align: center; margin: 30px 0px;">INTERACTIVE MAP</h2>
+								<div class="phone">
+									<img src="images/markit_click.gif" style="display: block; width: 100%; margin: auto;">
+								</div>
+							</div>
+
+							<div style="width: 28%; margin: 20px; min-width: 260px;">
+								<h2 style="text-align: center; margin-top: 30px;">LABEL SEARCH</h2>
+								<div class="phone">
+									<img src="images/markit_search3.gif" style="display: block; width: 100%; margin: auto;">
+								</div>
+							</div>
+
+							<div style="width: 28%; margin: 20px; min-width: 260px;">
+								<h2 style="text-align: center; margin-top: 30px;">REVIEWS</h2>
+								<div class="phone">
+									<img src="images/markit_reviews4.gif" style="display: block; width: 100%; margin: auto;">
+								</div>
+							</div>
+						</div>
+
+						<p style="text-align: center; margin: 60px 25px;">The final prototype was created using Adobe Xd and Adobe Illustrator.</p>
+
+				</div>
+				<div class="footer"></div>
+				
+			</div>
+
+		<!-------------------- ghost -------------------->
+
+			<div id="ghost" class="page">
+
+				<div class="project_overview">
+
+					<div class="overview_section">
+						<div class="thumbnail_holder">
+							<img src="images/ghost_icon.png" class="thumbnail">
+						</div>
+						<p class="overview">Ghost is an online word game for friends that is based on the traditionally spoken game with the same name. It was developed for course 6.148: <i>Web Programming Class & Competition</i> within 22 days. Ghost was awarded Honorable Mention by course sponsors as well as People's Choice by voters.</p>
+					</div>
+
+					<div class="project_tag_section">
+						<p class="project_tag">ROLE</p>
+						<p class="project_tag_info">
+							Game Design, Software Development, User Experience Design, User Interface Design
+						</p>
+					</div>
+
+					<div class="project_tag_section">
+						<p class="project_tag">DATE</p>
+						<p class="project_tag_info">January 2018</p>
+					</div>
+
+					<div class="project_tag_section">
+						<p class="project_tag">COLLABORATORS</p>
+						<p class="project_tag_info">
+							Calvin Phung (MIT '21), Lillian Bu (MIT '21)
+						</p>
+					</div>
+
+					<div class="project_tag_section">
+						<p class="project_tag">LINK</p>
+						<a class="project_tag_info" target="_blank" href="http://ghostfriends.herokuapp.com">
+							ghostfriends.herokuapp.com
+						</a>
+					</div>
+
+				</div>
+
+				<div class="main_content">
+
+					<h1>OPPORTUNITY STATEMENT</h1>
+						<p style="margin: 20px 25px;">The benefit of online games is that friends can play together regardless of distance. However, due to differences in levels of experience between friends, and high barriers for entry due to game complexity, friends often struggle to play with one another. Thus, our team focused on answering the following question:</p>
+						<p class="statement">How can we make a simple game that is <strong>fun and fair for everyone</strong>
+						<br>so that friends can play together online <strong>regardless of experience?</strong></p>
+
+					<h1>THE GAME</h1>
+						<h2 style="margin-left: 25px;">RULES</h2>
+						<p style="white-space: pre-wrap; margin: 30px 25px 50px 25px;">A game that came to mind was a word game from our childhood &mdash; Ghost. In it, players take turns adding one letter each to the end of a growing string. If a player completes a word that is not part of a longer one, or creates a string that is not part of any word, they get a strike. Five strikes and they become a ghost! 
+						<br>The beauty of the game is in its simplicity &mdash; it is easy to learn, and experienced players do not have a significant advantage against beginners. </p>
+
+						<h2 style="margin-left: 25px;">CREATING AN ONLINE VERSION</h2>
+						<p style="margin: 30px 25px 50px 25px;">The benefit of bringing Ghost online was that we were able to enhance the traditional version with these features, which are only possible in a digital space:</p>
+						<img src="images/ghost_benefits.png" style="display: block; width: 86%; max-width: 800px; margin: 80px auto 100px auto;">
+
+						<p style="margin: 20px 25px 30px 25px;">Before starting development, we outlined the game flow as well as the structure of our React.js frontend.</p>
+
+						<div class="row" style="justify-content: center;">
+							<div style="width: 40%; margin: 20px; min-width: 400px;">
+								<h2 style="text-align: center; margin: 10px auto 40px auto;">PAGE FLOW</h2>
+								<img src="images/ghost_pageflow.png" style="display: block; width: 80%; max-width: 300px; margin: auto;">
+							</div>
+							<div style="width: 40%; margin: 20px; min-width: 400px;">
+								<h2 style="text-align: center; margin: 10px auto 40px auto;">COMPONENT DIAGRAM</h2>
+								<img src="images/ghost_components.png" style="display: block; width: 100%; max-width: 400px; margin: auto;">
+							</div>
+						</div>
+
+						<p style="margin: 50px 25px 80px 25px;">We used Socket.io to support realtime play, Node.js for our server, MongoDB to store player data, and Datamuse API to check the validity of letters.</p>
+
+					<h1>AESTHETIC</h1>
+
+						<p style="white-space: pre-wrap; margin: 30px 25px 50px 25px;">A key component to digital games is visual stimulation. Therefore, as our team's designer, I put special effort into designing <i>delightful</i> and <i>smooth</i> visual effects.
+						<br>The moving background was designed to encourage excitement as the game progresses. Since ghosts (<i>supposedly</i>) come out at night, I decided to make the background start from an orange sunset and scroll up to a starry deep violet &mdash; the longer a round goes, the deeper players go into the night.
+						<br>In addition, an easter egg was included for players who have already become ghosts to be able to interact by floating around on the screen and distracting ongoing players.</p>
+						
+						<div class="row" style="justify-content: center; margin: 30px auto;">
+							<div style="width: 45%; margin: 20px; min-width: 400px;">
+								<h2 style="text-align: center; margin-top: 0px;">HOME</h2>
+								<img src="images/ghost_home.gif" style="display: block; width: 100%; max-width: 400px; margin: auto;">
+							</div>
+							<div style="width: 45%; margin: 20px; min-width: 400px;">
+								<h2 style="text-align: center; margin-top: 0px;">CREATE GAME</h2>
+								<img src="images/ghost_create.gif" style="display: block; width: 100%; max-width: 400px; margin: auto;">
+							</div>
+						</div>
+
+						<div class="row" style="justify-content: center; margin: 30px auto 80px auto;">
+							<div style="width: 45%; margin: 20px; min-width: 400px;">
+								<h2 style="text-align: center; margin-top: 0px;">GAME PLAY</h2>
+								<img src="images/ghost_play.gif" style="display: block; width: 100%; max-width: 400px; margin: auto;">
+							</div>
+							<div style="width: 45%; margin: 20px; min-width: 400px;">
+								<h2 style="text-align: center; margin-top: 0px;">EASTER EGG</h2>
+								<img src="images/ghost_easteregg.gif" style="display: block; width: 100%; max-width: 400px; margin: auto;">
+							</div>
+						</div>
+
+					<h1>ITERATIVE DESIGN</h1>
+
+						<p style="margin: 60px 25px;">The final design &mdash; from the layout of the game to the shape of the clouds &mdash; is a culmination of many incremental changes made based on constant play testing and feedback acquired from players, teammates, and mentors.</p>
+
+						<h2 style="text-align: center; margin-top: 80px;">LAYOUT</h2>
+						<div id="slider" class="beer-slider" data-beer-label="final" style="display: block; width: 600px; margin: auto;">
+							<img src="images/ghost_layout_new.png" alt="">
+							<div class="beer-reveal" data-beer-label="initial">
+							   <img src="images/ghost_layout_old.png" alt="">
+							</div>
+						</div>
+
+						<h2 style="text-align: center; margin-top: 80px;">BACKGROUND FEATURES</h2>
+						<div class="row" style="justify-content: center;">
+							<div id="slider" class="beer-slider" data-beer-label="final" style="display: block; width: 450px; margin: auto;">
+								<img src="images/ghost_clouds_new.png" alt="">
+								<div class="beer-reveal" data-beer-label="initial">
+								   <img src="images/ghost_clouds_old.png" alt="">
+								</div>
+							</div>
+
+
+							<div id="slider" class="beer-slider" data-beer-label="final" style="display: block; width: 450px; margin: auto;">
+								<img src="images/ghost_stars_new.png" alt="">
+								<div class="beer-reveal" data-beer-label="initial">
+								   <img src="images/ghost_stars_old.png" alt="">
+								</div>
+							</div>
+						</div>
+
+						<div class="row" style="justify-content: center;">
+							<div style="width: 40%; margin: 0px; min-width: 400px;">
+								<h2 style="text-align: center; margin-top: 80px;">LOGO</h2>
+								<div id="slider" class="beer-slider" data-beer-label="final" style="display: block; width: 350px; margin: auto;">
+									<img src="images/ghost_icon_new.png" alt="">
+									<div class="beer-reveal" data-beer-label="initial">
+									   <img src="images/ghost_icon_old.png" alt="">
+									</div>
+								</div>
+							</div>
+							<div style="width: 40%; margin: 0px; min-width: 400px;">
+								<h2 style="text-align: center; margin-top: 80px;">GRADIENT</h2>
+								<div id="slider" class="beer-slider" data-beer-label="final" style="display: block; width: 350px; margin: auto;">
+									<img src="images/ghost_gradient_new.png" alt="">
+									<div class="beer-reveal" data-beer-label="initial">
+									   <img src="images/ghost_gradient_old.png" alt="">
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<h2 style="text-align: center; margin-top: 80px;">SCREEN</h2>
+						<div id="slider" class="beer-slider" data-beer-label="final" style="display: block; width: 850px; margin: auto;">
+							<img src="images/ghost_screen_new.png" alt="">
+							<div class="beer-reveal" data-beer-label="initial">
+							   <img src="images/ghost_screen_old.png" alt="">
+							</div>
+						</div>
+
+						<p style="margin: 80px 25px; text-align: center;">All icons and graphics were created using Adobe Illustrator.</p>
+
+				</div>
+				<div class="footer"></div>
+
+			</div>
+
+		<!-------------------- teachbot -------------------->
+
+			<div id="teachbot" class="page">
+				
+				<div class="project_overview">
+
+					<div class="overview_section">
+						<div class="thumbnail_holder">
+							<img src="images/teachbot_icon.png" class="thumbnail">
+						</div>
+						<p class="overview">TeachBot is a robotic educational tool and curriculum that teaches manufacturing workers about various aspects of robotics using a hands-on, robust learning interface and direct interaction with a robot. I worked in MIT's d'Arbeloff Laboratory directed by Professor Haruhiko Harry Asada as an undergraduate research assistant focused on design and front-end development for TeachBot learning modules.</p>
+					</div>
+
+					<div class="project_tag_section">
+						<p class="project_tag">ROLE</p>
+						<p class="project_tag_info">
+							Educational Design, Graphic Design, Front-End Development, User Experience Design, User Interface Design
+						</p>
+					</div>
+
+					<div class="project_tag_section">
+						<p class="project_tag">DATE</p>
+						<p class="project_tag_info">Summer 2019</p>
+					</div>
+
+					<div class="project_tag_section">
+						<p class="project_tag">SUPERVISOR</p>
+						<p class="project_tag_info">
+							Nicholas Selby (MIT Ph.D Candidate)
+						</p>
+					</div>
+
+					<div class="project_tag_section">
+						<p class="project_tag">LINK</p>
+						<a class="project_tag_info" target="_blank" href="http://meche.mit.edu/news-media/professor-harry-asada-awarded-2-million-grant-develop-robotic-educational-tool-%E2%80%9Cteach-bot">
+							http://meche.mit.edu/news-media/professor-harry-asada-awarded-2-million-grant-develop-robotic-educational-tool-"teach-bot
+						</a>
+					</div>
+
+				</div>
+
+				<div class="main_content">
+
+					<h1>THE PROJECT</h1>
+
+						<h2>BACKGROUND</h2>
+
+						<div class="row" style="margin-bottom: 50px;">
+							<p style="flex: 2; margin: 30px 25px 50px 25px; min-width: 300px; white-space: pre-wrap;">While the number of manufacturing jobs is rapidly on the rise, the skilled work force able to fulfill them is not growing nearly as quickly. TeachBot aims to solve this problem through a hands-on curriculum in which learners interact directly with a robot arm and accessories as they follow along digital learning modules that are projected onto a surface. 
+							<br>Currently, a working prototype of the system is being deployed and tested with industry partners.</p>
+							<img src="images/teachbot_setup.jpg" style="width: 452px; height: 340px; margin: 0px 25px; display: inline-block;">
+						</div>
+
+						<h2>INTERFACE DESIGN PROCESS</h2>
+
+						<p style="margin-left: 25px; white-space: pre-wrap;">The impact of TeachBot depends largely on how well the digital learning modules illustrate new concepts to the learners. These modules are comprised of educational graphics and user interface components, all of which should be intuitive so that they enhance the learning experience rather than simply contribute to the learner's cognitive load. In order to achieve the quality of work that both my supervisor and I wanted for my designs, we followed a design process that involved collaborative brainstorming and multiple iterations before finalization.</p>
+
+						<img src="images/teachbot_process.png" style="width: 800px; margin: 80px auto; display: block;">
+
+						<p style="margin-left: 25px; margin-bottom: 80px;  white-space: pre-wrap;">For each of my design tasks, I used Adobe Illustrator to create graphics and Javascript for animated or interactive components. The graphics were integrated into the TeachBot learning modules through an HTML canvas.</p>
+
+					<h1>ICON DESIGN</h1>
+
+						<h2>MOTIVATION</h2>
+
+						<p style="margin-left: 25px; margin-bottom: 50px; white-space: pre-wrap;">One of the TeachBot learning modules teaches about position and orientation in robotics. After a lesson about the concepts, the learner reviews them in an activity where they must move the robot arm to a specific position and orientation. They are able to change the position of the robot arm by pressing a white button on it, which unlocks the parts of the arm that let the learner freely move its position, and the orientation by pressing a grey button, which works correspondingly. The learner may switch between the two modes as often as needed to complete the task. 
+						<br>During learner testing of this activity, it was discovered that many struggled to understand what mode the robot arm was currently on. For example, one learner would press the grey button that corresponds with <i>orientation</i>, then try to move the robot's <i>position</i>, become frustrated when it doesn't behave as expected, and proceed to repeatedly press the incorrect button.
+						<br>From this observation, it was apparent that learners needed a visual indication of whether the robot was in position or orientation mode. Therefore, my task was to create a status indicator to show which mode the robot arm was in.</p>
+
+						<h2>IDEATION</h2>
+
+						<div class="row">
+							<img src="images/teachbot_inspo.jpg" style="width: 200px; height: 200px; margin: 30px 25px 0px; display: inline-block;">
+							<p style="flex: 2; margin: auto 25px; min-width: 300px; white-space: pre-wrap;">I started by designing icons that represented each of the two modes. This proved to be a challenging task because there were no precedents of icons or symbols representing position and orientation in a robotics context which I could use as a model. However, I was able to draw inspiration from an icon that is commonly seen in word processors to indicate page orientation. This icon suggests movement &mdash; the same concept behind my icons &mdash; by showing a "before" and an "after" stage with an arrow drawing the motion between.</p>
+						</div>
+
+						<div class="row" style="margin-bottom: 50px;">
+							<p style="flex: 2; margin: auto 25px; min-width: 300px; white-space: pre-wrap;">For the format of the status indicator, Nick and I agreed that the two icons should be displayed together, with some way of distinguishing which one was currently engaged. After brainstorming several options for how to distinguish this, we decided that the most intuitive way was to colorize the active icon and grayscale the inactive one.</p>
+							<img src="images/teachbot_ideation.png" style="width: 150px; height: 353px; margin: 0px 25px; display: inline-block;">
+						</div>
+
+						<h2>ITERATION</h2>
+
+						<p style="margin: auto 25px; white-space: pre-wrap;">My initial design for the position icon illustrated a top view of the robot arm as its position shifts between two states. For my final design, however, I shifted the view to an angle that is closer to what the learner is seeing. This angle also adds depth perception that makes the illustration more understandable.</p>
+
+						<div class="row" style="justify-content: center; margin-bottom: 80px;">
+
+							<div style="width: 40%; margin: 20px; min-width: 200px;">
+								<h2 style="text-align: center; margin: 20px 0px;">BEFORE</h2>
+								<img src="images/teachbot_position1.png" style="display: block; width: 80%; max-width: 250px; margin: auto;">
+							</div>
+
+							<div style="width: 40%; margin: 20px; min-width: 200px;">
+								<h2 style="text-align: center; margin: 20px 0px;">AFTER</h2>
+								<img src="images/teachbot_position2.png" style="display: block; width: 80%; max-width: 250px; margin: auto;">
+							</div>
+
+						</div>
+
+						<h2 style="margin-bottom: 0px;">FINAL DESIGN</h2>
+
+						<img src="images/teachbot_pos_orien.gif" style="display: block; width: 100%; max-width: 600px; margin: 0px auto;">
+
+					<h1>EDUCATIONAL GRAPHICS</h1>
+
+						<h2>LEARNING OBJECTIVE</h2>
+
+						<p style="margin-left: 25px; white-space: pre-wrap; margin-bottom: 50px;">Another learning module of TeachBot teaches basics about encoders in robotics. For this module, I designed an educational graphic that visualizes at a general scope the function of an encoder. The purpose of the graphic was to convey that an encoder is connected to a motor, encodes information such as the rotational angle of the motor, and represents this data to a computer through code.</p>
+
+						<h2>IDEATION</h2>
+
+						<p style="margin-left: 25px; white-space: pre-wrap;">The biggest challenge in creating this graphic was distinguishing what is essential to the learner's understanding from what is not. Together, Nick and I decided on the critical pieces of information to include. In addition, we agreed that including an inside view of the robot to show where the encoder is located, and an animation to illustrate its function, would make for an effective graphic.</p>
+
+						<img src="images/teachbot_essentials.png" style="width: 800px; margin: 80px auto; display: block;">
+
+						<h2>ITERATION</h2>
+
+						<p style="margin-left: 25px; white-space: pre-wrap;">Taking Nick's feedback on my initial design, I made several key changes to my rough initial prototype that led to my final animated educational graphic. The learning module containing this graphic was tested with learners and was received with positive reviews.</p>
+
+						<div class="row" style="justify-content: center; margin-bottom: 80px;">
+
+							<div style="width: 40%; margin: 20px 5px; min-width: 450px;">
+								<h2 style="text-align: center; margin: 20px 0px;">BEFORE</h2>
+								<img src="images/teachbot_encoder_before.png" style="display: block; height: 260px; margin: auto;">
+							</div>
+
+							<div style="width: 40%; margin: 20px 5px; min-width: 450px;">
+								<h2 style="text-align: center; margin: 20px 0px;">AFTER</h2>
+								<img src="images/teachbot_encoder_after.png" style="display: block; height: 260px; margin: auto;">
+							</div>
+
+						</div>
+
+						<h2>FINAL DESIGN</h2>
+
+						<div class="canvas_container">
+							<canvas id="canvas_after" width= "1000px" height="400px"></canvas>
+						</div>
+
+						<div class="footer"></div>
+
+				</div>
+
+			</div>
+
+	<!-------------------- techx_apply -------------------->
+
+			<div id="techx_apply" class="page">
+				
+				<div class="project_overview">
+
+					<div class="overview_section">
+						<div class="thumbnail_holder">
+							<img src="images/techx_apply_icon.png" class="thumbnail">
+						</div>
+						<p class="overview">TechX is an MIT student-run organization that encompasses five committees which aim to empower high school and college students through various opportunities to participate in tech innovation. The application portal, which was revamped to meet the fall 2019 application cycle, is more streamlined and embodies the TechX brand.</p>
+					</div>
+
+					<div class="project_tag_section">
+						<p class="project_tag">ROLE</p>
+						<p class="project_tag_info">
+							Branding, User Experience Design, User Interface Design
+						</p>
+					</div>
+
+					<div class="project_tag_section">
+						<p class="project_tag">DATE</p>
+						<p class="project_tag_info">Summer 2019</p>
+					</div>
+
+					<div class="project_tag_section">
+						<p class="project_tag">COLLABORATORS</p>
+						<p class="project_tag_info">
+							Bryan Chen (MIT '21), Kevin Fang (MIT '21)
+						</p>
+					</div>
+
+				</div>
+
+				<div class="main_content">
+					<h1>MOTIVATION</h1>
+						<p style="margin-left: 25px; white-space: pre-wrap;">Techx's committees host large-scale events and competitions, such as MIT's largest hackathon, HackMIT, which attracts over a thousand college students from across the country. Thus, we put in a special effort to deliver outstanding user experience and design to the many students that we reach, leading to our reputation throughout MIT as an organization with an exceptional marketing team. 
+						<br>However, our member application portal prior to the Fall 2019 cycle was not up to our standards in terms of both the user flow and appearance. Since the application is one of the first ways that potential new members interact with TechX, it is crucial for it to establish the intended impression. Therefore, as TechX's director of marketing, I led the effort to transform the application experience for our future application cycles.</p>
+					<h1>THE USER EXPERIENCE</h1>
+						<p style="margin-left: 25px; white-space: pre-wrap;">According to feedback from past TechX applicants, the overarching problem with the original application portal was that the unnecessarily large amount of text on each page caused cognitive overload for potential applicants. Therefore, our team decided to eliminate all nonessential application questions, and I reorganized the page flow so that only relevant text is displayed to the applicant. 
+						<br>Below, blue indicates sections that are relevant to an imaginary applicant. Before, they had to scroll past many irrelevant and distracting parts of the application in order to reach the ones that mattered. Now, only necessary sections are displayed. Moreover, the new page flow reduces the length of each page, making them more digestable.</p>
+
+						<h2 style="text-align: center; margin: 50px 0px;">PAGE FLOW: BEFORE</h2>
+						<img src="images/techx_pages1.png" style="display: block; width: 90%; margin: 0px auto 80px auto; padding: 0px 25px">
+
+						<h2 style="text-align: center; margin: 50px 0px;">PAGE FLOW: AFTER</h2>
+						<img src="images/techx_pages2.png" style="display: block; width: 90%; margin: 0px auto 80px auto; padding: 0px 25px">
+
+						<p style="margin-left: 25px; white-space: pre-wrap;">In order to create an interface perfectly fit for the format of our application, I worked with two members of the TechX development team, Bryan Chen (MIT '21) and Kevin Fang (MIT '21), who implemented my design ideas.</p>
+					
+					<h1>THE BRAND</h1>
+
+						<p style="margin-left: 25px; white-space: pre-wrap;">Contrary to our design standards, the UI of the original application interface &mdash; including the typography and colors &mdash; was not consistent with other TechX-branded materials. Therefore, before beginning the redesign, I established the general "look" of the portal.</p>
+
+						<div class="row" style="margin-bottom: 50px;">
+
+							<img src="images/techx_styleguide.jpg" style="width: 550px; margin: 25px; display: inline-block;">
+
+							<p style="flex: 2; margin: auto 25px; min-width: 200px; white-space: pre-wrap;">The concept of my redesign is simple, clean, and modern. For typography, I looked for rounded sans-serif fonts that fit my concept and are easily readable. The colors used were taken from the standard TechX logo, and the subtle background gradient was created to add depth while retaining the visibility of the text.</p>
+			
+						</div>
+
+					<h1>ITERATION</h1>
+						<p style="margin-left: 25px; white-space: pre-wrap;">Throughout the development process, the interface was constantly tested by TechX members who gave valuable feedback about usability that led to the final design. </p>
+
+						<h2 style="text-align: center; margin: 80px 0px 20px 0px;">OLD APPLICATION</h2>
+						<img src="images/techx_app0.png" style="display: block; width: 90%; margin: 0px auto 80px auto; padding: 0px 25px">
+
+						<h2 style="text-align: center; margin: 20px 0px;">INITIAL PROTOTYPE</h2>
+						<img src="images/techx_app1.png" style="display: block; width: 90%; margin: 0px auto 80px auto; padding: 0px 25px">
+
+						<h2 style="text-align: center; margin: 20px 0px;">FINAL DESIGN</h2>
+						<img src="images/techx_app2.png" style="display: block; width: 90%; margin: 0px auto; padding: 0px 25px">
+
+					<div class="footer"></div>
+					
+				</div>
+
+			</div>
+
+	<!-------------------- mic -------------------->
+
+			<div id="mic" class="page">
+				
+				<div class="project_overview">
+
+					<div class="overview_section">
+						<div class="thumbnail_holder">
+							<img src="images/mic_icon.png" class="thumbnail">
+						</div>
+						<p class="overview">MIC (Machine Intelligence Community) is an intercollege organization focused on promoting and fostering the growing interest around machine intelligence. I was asked by MIT MIC to lead their rebranding effort, which included a redesign for their website.</p>
+					</div>
+
+					<div class="project_tag_section">
+						<p class="project_tag">ROLE</p>
+						<p class="project_tag_info">
+							Branding, Graphic Design, User Interface Design, User Experience Design
+						</p>
+					</div>
+
+					<div class="project_tag_section">
+						<p class="project_tag">DATE</p>
+						<p class="project_tag_info">Summer 2019 &mdash; Current</p>
+					</div>
+
+				</div>
+
+				<div class="main_content">
+
+					<h1>MOTIVATION</h1>
+
+						<p style="margin-left: 25px; white-space: pre-wrap;">MIT MIC had a major problem prior to Summer 2019, which was that they had not updated their website since 2017. Not only was their information outdated, but the original website had been put together without much attention to design. The goal of my redesign was to create a more useful, visually pleasing website that visitors would enjoy.</p>
+
+					<h1>WIREFRAMES</h1>
+
+						<p style="margin-left: 25px; white-space: pre-wrap;">For the layout of the website, I focused on the needs of its visiters. The main activities that students join MIT MIC for include their weekly reading groups and workshops. Therefore, the website was redesigned so that the first thing visitors would view on the home page was information about these activities.</p>
+
+						<img src="images/mic_wireframe.png" style="width: 90%; margin: 80px auto; display: block;">
+
+					<h1>BRANDING</h1>
+
+						<div class="row" style="margin-bottom: 50px;">
+							<img src="images/mic_styleguide.png" style="width: 500px; margin: 0px 25px; display: inline-block;">
+							<p style="flex: 2; margin: auto 25px; min-width: 300px; white-space: pre-wrap;">For the "look" of the website, I decided on a sleek, dark-grey background with white text and bright point colors for a tech-y feel that fits with the organization's purpose and makes MIC's iconic logo stand out. The point colors were inspired by the logo, which I revamped for a cleaner look.</p>
+						</div>
+
+					<h1>REDESIGN</h1>
+
+						<img src="images/mic_animation.gif" style="width: 90%; margin: 80px auto; display: block;">
+						<p style="margin-left: 25px; white-space: pre-wrap;">Because MIC's logo is very unique and is a signature of the organization, I decided to emphasize it on the home page of their website through a simple animation. This way, it has a lasting impression on visitors, who would then recognize it elsewhere. The animation also makes the website more interesting and feel less static.</p>
+
+					<div class="footer"></div>
+
+				</div>
+
+			</div>
+
+		</div>
+
 	</div>
+
 	<script>
-		navitem(1, "projects");
-		navitem(2, "me", true);
-		navitem(3, "resume");
 		show_page("projects");
 		toggle_navitem("projects");
-		var navbar = document.getElementById("navbar");
-		var content = document.getElementById("content");
+		draw_encoder_after();
+
+
+	</script>
+
+	<script src="node_modules/beerslider/dist/BeerSlider.js"></script>
+
+	<script>
+	    $.fn.BeerSlider = function ( options ) {
+		    options = options || {};
+		    return this.each(function() {
+		      new BeerSlider(this, options);
+		    });
+		  };
+		  $('.beer-slider').BeerSlider({start: 50});
+
+		var amount = '';
+
+		function scroll() {
+		    $('#timeline_container').animate({
+		        scrollLeft: amount
+		    }, 100, 'linear',function() {
+		        if (amount != '') {
+		            scroll();
+		        }
+		    });
+		}
+
+		$('#timeline_right').hover(function() {
+		    amount = '+=44';
+		    scroll();
+		}, function() {
+		    amount = '';
+		});
+
+		$('#timeline_left').hover(function() {
+		    amount = '-=44';
+		    scroll();
+		}, function() {
+		    amount = '';
+		});
 
 	</script>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
