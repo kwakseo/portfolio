@@ -972,7 +972,7 @@ Main Components
 /*  line-height: 1;*/
 }
 
-@media only screen and (max-width: 768px) {
+/*@media only screen and (max-width: 768px) {
   .cd-horizontal-timeline .events-content h2 {
     font-size: 0.5rem;
   }
@@ -983,7 +983,7 @@ Main Components
     font-size: 1.2rem;
   }
 
-}
+}*/
 
 @-webkit-keyframes cd-enter-right {
   0% {
