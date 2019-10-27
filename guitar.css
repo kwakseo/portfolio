@@ -7,10 +7,6 @@
 } 
 
 body {
-/*	font-family: 'Guitar';
-	font-family: 'Work Sans', sans-serif;
-	font-weight: 400;
-	font-size: 21px;*/
 	background-color: #f7f7f7;
 }
 
@@ -74,7 +70,6 @@ input {
 
 .input_container {
 	width: 1000px;
-/*	height: 200px;*/
 	display: flex;
 	margin: 30px auto 50px auto;
  	justify-content: center;
@@ -84,7 +79,6 @@ input {
 
 .play_button {
 	display: flex;
-/*	background-color: #000000;*/
 	background-image: url('guitar_images/assets/play.png');
 	background-size: contain;
 	background-repeat: no-repeat;
