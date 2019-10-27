@@ -85,7 +85,7 @@ input {
 .play_button {
 	display: flex;
 /*	background-color: #000000;*/
-	background-image: url('images/assets/play.png');
+	background-image: url('guitar_images/assets/play.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
