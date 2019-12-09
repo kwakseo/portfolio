@@ -33,16 +33,23 @@ function splash() {
 }
 
 function page1() {
+	
 	document.getElementById("splash").style.display = "none";
 	document.body.style.backgroundColor = "#000000";
 	document.getElementById("background").style.backgroundColor = "#000000";
 	setTimeout(page2, pace);
+	screen.style.width = "1020px";
+	screen.style.height = "700px";
 	onsplash = false;
 }
 
 function page2() {
+	whitebox.style.display = "flex";
+	dialogue.style.display = "block";
+	dialogue.style.left = "0";
+	whitebox.style.opacity = 1;
 	document.body.style.backgroundColor = "#000000";
-	document.getElementById("background").style.backgroundColor = "#000000";
+	screen.style.backgroundColor = "#000000";
 	screen.style.display = "flex";
 	dialogue.innerHTML = "가지마, 내가 잘못했어!";
 	setTimeout(page3, pace);
@@ -309,49 +316,49 @@ function page48() {
 	setTimeout(page49, fast);
 }
 
-function page40() {
+function page49() {
 	screen.style.backgroundColor = "#669baa";
-	setTimeout(page41, pace);
+	setTimeout(page50, pace);
 }
 
-function page41() {
+function page50() {
 	screen.style.backgroundColor = "#6da5b2";
 	screen.style.width = "1312px";
 	screen.style.height = "900px";
-	setTimeout(page42, pace);
+	setTimeout(page51, pace);
 }
 
-function page42() {
+function page51() {
 	screen.style.backgroundColor = "#82b8c4";
 	screen.style.width = "1412px";
 	screen.style.height = "1000px";
-	setTimeout(page43, pace);
+	setTimeout(page52, pace);
 }
 
-function page43() {
+function page52() {
 	screen.style.backgroundColor = "#9dd4e0";
 	screen.style.width = "1512px";
 	screen.style.height = "1000px";
-	setTimeout(page44, pace);
+	setTimeout(page53, pace);
 }
 
-function page44() {
+function page53() {
 	screen.style.backgroundColor = "#b9e8ed";
 	screen.style.width = "1612px";
 	screen.style.height = "1000px";
-	setTimeout(page45, pace);
+	setTimeout(page54, pace);
 }
 
-function page45() {
+function page54() {
 	screen.style.backgroundColor = "#d7f3f4";
 	document.getElementById("background").style.backgroundColor = "#d7f3f4";
 	document.body.style.backgroundColor = "#d7f3f4";
 	screen.style.width = "1712px";
 	screen.style.height = "1000px";
-	setTimeout(page46, pace);
+	setTimeout(page55, pace);
 }
 
-function page46() {
+function page55() {
 	screen.style.backgroundColor = "#ffffff";
 	document.getElementById("background").style.backgroundColor = "#ffffff";
 	document.body.style.backgroundColor = "#ffffff";
