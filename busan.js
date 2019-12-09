@@ -6,10 +6,18 @@ var dialogue = document.getElementById("dialogue");
 var whitebox = document.getElementById("white_box");
 var default_font_size = "70px";
 var onsplash = true;
+var veins1 = 0;
+var veins2 = 0;
+var veins3 = 0;
+var veins4 = 0;
 
 window.onload = function() {
 	// screen.style.backgroundColor = "#263547";
  	splash();
+ 	createImage("veins1", "busan_images/veins1.png", "1300px");
+ 	createImage("veins2", "busan_images/veins2.png", "1300px");
+ 	createImage("veins3", "busan_images/veins3.png", "1300px");
+ 	createImage("veins4", "busan_images/veins4.png", "1300px");
 }
 
 document.body.onkeyup = function(e){
@@ -23,6 +31,7 @@ function createImage(id, src, width) {
   x.setAttribute("src", src);
   x.setAttribute("width", width);
   x.id = id;
+  x.style.display = "none";
   screen.appendChild(x);
 }
 
@@ -128,7 +137,7 @@ function page13() {
 }
 
 function page14() {
-	createImage("veins1", "busan_images/veins1.png", "1300px");
+	document.getElementById("veins1").style.display = "block";
 	setTimeout(page15, fast);
 }
 
@@ -178,7 +187,7 @@ function page22() {
 }
 
 function page23() {
-	createImage("veins2", "busan_images/veins2.png", "1300px");
+	document.getElementById("veins2").style.display = "block";
 	setTimeout(page24, fast);
 }
 
@@ -226,7 +235,7 @@ function page31() {
 }
 
 function page32() {
-	createImage("veins3", "busan_images/veins3.png", "1300px");
+	document.getElementById("veins3").style.display = "block";
 	setTimeout(page33, fast);
 }
 
@@ -274,7 +283,7 @@ function page40() {
 }
 
 function page41() {
-	createImage("veins4", "busan_images/veins4.png", "1300px");
+	document.getElementById("veins4").style.display = "block";
 	setTimeout(page42, fast);
 }
 
