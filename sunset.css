@@ -1,7 +1,7 @@
 body {
 	background-color: #111111;
 	color: #bbbbbb;
-	font-family: Reenie Beanie, cursive;
+	font-family: Gelasio, serif;
 }
 
 .image_container {
@@ -36,18 +36,20 @@ body {
 }
 
 .caption {
-	font-size: 36px;
+	font-size: 22px;
 	height: 80px;
 	letter-spacing: 1px;
 	text-align: center;
 	margin-top: 50px;
+	font-style: italic;
 }
 
 .end {
-	font-size: 36px;
+	font-size: 22px;
 	margin: 10px ;
 	text-decoration: none;
 	color: #555555;
+	font-style: italic;
 }
 
 .end:hover {
@@ -58,7 +60,7 @@ body {
 /*	font-family: Work Sans, sans-serif;*/
 	margin-bottom: 50px;
 	letter-spacing: 4px;
-	font-size: 36px;
+	font-size: 22px;
 
 	
 }
@@ -66,14 +68,16 @@ body {
 #intro {
 	color: #dddddd;
 	text-align: center;
-	font-size: 120px;
+	font-size: 72px;
 	margin: 0px auto;
 	letter-spacing: 4px;
+	font-style: italic;
 }
 
 #intro_space {
 	text-align: center;
-	font-size: 32px;
+	font-size: 20px;
+	font-style: italic;
 /*	color: #555555;*/
 }
 
@@ -105,9 +109,10 @@ body {
 
 #back {
 	margin: 50px 10px;
-	font-size: 32px;
+	font-size: 22px;
 	color: #555555;
 	text-decoration: none;
+	font-style: italic;
 }
 
 #back:hover {
@@ -116,9 +121,10 @@ body {
 }
 
 .about {
-	font-size: 36px;
+	font-size: 22px;
 	width: 900px;
 	line-height: 1.2;
+	font-style: italic;
 }
 
 

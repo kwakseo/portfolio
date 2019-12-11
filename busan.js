@@ -1,4 +1,7 @@
-var fast = 500;
+var vfast = 300;
+var vvfast = 100;
+var fast = 700;
+var medium = 1500;
 var pace = 2000;
 var move_factor = 150;
 var screen = document.getElementById("screen");
@@ -10,14 +13,11 @@ var veins1 = 0;
 var veins2 = 0;
 var veins3 = 0;
 var veins4 = 0;
+var page = 0;
 
 window.onload = function() {
 	// screen.style.backgroundColor = "#263547";
  	splash();
- 	createImage("veins1", "busan_images/veins1.png", "1300px");
- 	createImage("veins2", "busan_images/veins2.png", "1300px");
- 	createImage("veins3", "busan_images/veins3.png", "1300px");
- 	createImage("veins4", "busan_images/veins4.png", "1300px");
 }
 
 document.body.onkeyup = function(e){
@@ -26,110 +26,137 @@ document.body.onkeyup = function(e){
     }
 }
 
-function createImage(id, src, width) {
-  var x = document.createElement("img");
-  x.setAttribute("src", src);
-  x.setAttribute("width", width);
-  x.id = id;
-  x.style.display = "none";
-  screen.appendChild(x);
+function hi() {
+	console.log("hi");
+}
+
+function nextPage(){
+	pagenum = page + 1;
+	var pagename = "page" + pagenum;
+	console.log(pagenum);
+	window[pagename]();
+
 }
 
 function splash() {
+	page = 0;
 	onsplash = true;
 	screen.style.display = "none";
 	document.getElementById("splash").style.display = "flex";
 }
 
+
 function page1() {
-	
+	page += 1;
 	document.getElementById("splash").style.display = "none";
 	document.body.style.backgroundColor = "#000000";
 	document.getElementById("background").style.backgroundColor = "#000000";
-	setTimeout(page2, pace);
 	screen.style.width = "1020px";
 	screen.style.height = "700px";
+	screen.style.backgroundColor = "#000000";
+	screen.style.display = "flex";
+	dialogue.innerHTML = "가지마!";
 	onsplash = false;
-}
-
-function page2() {
+	screen.style.display = "flex";
 	whitebox.style.display = "flex";
 	dialogue.style.display = "block";
+	document.getElementById("next").style.display = "flex";
 	dialogue.style.left = "0";
 	whitebox.style.opacity = 1;
 	document.body.style.backgroundColor = "#000000";
-	screen.style.backgroundColor = "#000000";
-	screen.style.display = "flex";
+	// whitebox.style.display = "none";
+	// setTimeout(page2, pace);
+}
+
+function page2() {
+	page += 1;
+	
+	// dialogue.style.display = "block";
+	// dialogue.style.left = "0";
+	// whitebox.style.opacity = 1;
+	// document.body.style.backgroundColor = "#000000";
+	// screen.style.backgroundColor = "#000000";
+	// screen.style.display = "flex";
 	dialogue.innerHTML = "가지마, 내가 잘못했어!";
-	setTimeout(page3, pace);
+	// document.getElementById("next").style.display = "flex";
+	// setTimeout(page3, pace);
 }
 
 function page3() {
-
+	page += 1;
 	screen.style.backgroundColor = "#0d1823";
 	dialogue.innerHTML = "아빠 가지마...";
-	setTimeout(page4, pace);
+	// setTimeout(page4, pace);
 }
 
 function page4() {
-
+	page += 1;
 	dialogue.innerHTML = "가지마...";
-	setTimeout(page5, pace);
+	// setTimeout(page5, pace);
 }
 
 function page5() {
+	page += 1;
 	screen.style.backgroundColor = "#192b38";
 	dialogue.innerHTML = "재발...";
-	setTimeout(page6, pace);
+	// setTimeout(page6, pace);
 }
 
 function page6() {
+	page += 1;
 	dialogue.innerHTML = "가지마...";
-	setTimeout(page7, pace);
+	// setTimeout(page7, pace);
 }
 
 function page7() {
+	page += 1;
 	screen.style.backgroundColor = "#203744";
 	dialogue.innerHTML = "나랑 같이 있어...";
-	setTimeout(page8, pace);
+	// setTimeout(page8, pace);
 }
 
 function page8() {
+	page += 1;
 	dialogue.innerHTML = "가지마...";
-	setTimeout(page9, pace);
+	// setTimeout(page9, pace);
 }
 
 function page9() {
+	page += 1;
 	screen.style.backgroundColor = "#334c60";
 	whitebox.style.left = String(move_factor)+"px";
 	dialogue.innerHTML = "아빠!";
 	dialogue.style.fontSize = "100px";
-	setTimeout(page10, pace);
+	// setTimeout(page10, pace);
 }
 
 function page10() {
+	page += 1;
 	whitebox.style.left = String(move_factor*2)+"px";
 	dialogue.innerHTML = "아빠! 안돼!";
 	dialogue.style.fontSize = "130px";
-	setTimeout(page11, pace);
+	// setTimeout(page11, pace);
 }
 
 function page11() {
+	page += 1;
 	screen.style.backgroundColor = "#3a576b";
 	whitebox.style.left = String(move_factor*3.8)+"px";
 	dialogue.innerHTML = "아빠!";
 	dialogue.style.fontSize = "160px";
-	setTimeout(page12, pace);
+	// setTimeout(page12, pace);
 }
 
 function page12() {
+	page += 1;
 	whitebox.style.left = String(move_factor*5.5)+"px";
 	dialogue.innerHTML = "안돼!";
 	dialogue.style.fontSize = "190px";
-	setTimeout(page13, pace);
+	// setTimeout(page13, pace);
 }
 
 function page13() {
+	document.getElementById("next").style.display = "none";
 	screen.style.backgroundColor = "#426477";
 	whitebox.style.display = "none";
 	dialogue.style.display = "none";
@@ -137,13 +164,17 @@ function page13() {
 }
 
 function page14() {
-	document.getElementById("veins1").style.display = "block";
-	setTimeout(page15, fast);
+	screen.style.backgroundColor = "#75112b";
+	// document.body.style.backgroundColor = "#75112b";
+	// document.getElementById("background").style.backgroundColor = "#75112b";
+	setTimeout(page15, vfast);
 }
 
 function page15() {
-	document.getElementById("veins1").style.display = "none";
-	setTimeout(page16, fast);
+	screen.style.backgroundColor = "#426477";
+	// document.body.style.backgroundColor = "#000000";
+	// document.getElementById("background").style.backgroundColor = "#000000";
+	setTimeout(page16, medium);
 }
 
 function page16() {
@@ -183,17 +214,17 @@ function page21() {
 
 function page22() {
 	screen.style.backgroundColor = "#4c7f93";
-	setTimeout(page23, pace);	
+	setTimeout(page23, medium);	
 }
 
 function page23() {
-	document.getElementById("veins2").style.display = "block";
-	setTimeout(page24, fast);
+	screen.style.backgroundColor = "#75112b";
+	setTimeout(page24, vfast);
 }
 
 function page24() {
-	document.getElementById("veins2").style.display = "none";
-	setTimeout(page25, fast);
+	screen.style.backgroundColor = "#4c7f93";
+	setTimeout(page25, medium);
 }
 
 function page25() {
@@ -211,10 +242,20 @@ function page26() {
 
 function page27() {
 	whitebox.style.opacity = 0.3;
-	setTimeout(page28, fast);
+
+	setTimeout(page280, vfast);
+}
+
+function page280() {
+	screen.style.left = "2%";
+	// screen.style.top = "55%";
+
+	setTimeout(page28, vvfast);
 }
 
 function page28() {
+	screen.style.left = "auto";
+	// screen.style.top = "50%";
 	whitebox.style.opacity = 0.2;
 	setTimeout(page29, fast);
 }
@@ -231,17 +272,17 @@ function page30() {
 
 function page31() {
 	screen.style.backgroundColor = "#5f91a3";
-	setTimeout(page32, pace);
+	setTimeout(page32, medium);	
 }
 
 function page32() {
-	document.getElementById("veins3").style.display = "block";
-	setTimeout(page33, fast);
+	screen.style.backgroundColor = "#75112b";
+	setTimeout(page33, vfast);
 }
 
 function page33() {
-	document.getElementById("veins3").style.display = "none";
-	setTimeout(page34, fast);
+	screen.style.backgroundColor = "#5f91a3";
+	setTimeout(page34, medium);
 }
 
 function page34() {
@@ -259,10 +300,24 @@ function page35() {
 
 function page36() {
 	whitebox.style.opacity = 0.3;
-	setTimeout(page37, fast);
+	setTimeout(page370, fast);
+}
+
+function page370() {
+	screen.style.left = "-2%";
+	// screen.style.top = "55%";
+
+	setTimeout(page371, vvfast);
+}
+
+function page371() {
+	screen.style.left = "2%";
+	// screen.style.top = "50%";
+	setTimeout(page37, vvfast);
 }
 
 function page37() {
+	screen.style.left = "auto";
 	whitebox.style.opacity = 0.2;
 	setTimeout(page38, fast);
 }
@@ -279,19 +334,18 @@ function page39() {
 
 function page40() {
 	screen.style.backgroundColor = "#6da1af";
-	setTimeout(page41, pace);
+	setTimeout(page41, medium);	
 }
 
 function page41() {
-	document.getElementById("veins4").style.display = "block";
-	setTimeout(page42, fast);
+	screen.style.backgroundColor = "#75112b";
+	setTimeout(page42, vfast);
 }
 
 function page42() {
-	document.getElementById("veins4").style.display = "none";
-	setTimeout(page43, fast);
+	screen.style.backgroundColor = "#6da1af";
+	setTimeout(page43, medium);
 }
-
 function page43() {
 	whitebox.style.opacity = 0.1;
 	dialogue.innerHTML = "아빠...";
@@ -302,17 +356,76 @@ function page43() {
 
 function page44() {
 	whitebox.style.opacity = 0.2;
-	setTimeout(page45, fast);
+	setTimeout(page450, fast);
+}
+
+function page450() {
+	screen.style.left = "2%";
+	// screen.style.top = "55%";
+
+	setTimeout(page451, vvfast);
+}
+
+function page451() {
+	screen.style.left = "auto";
+	// screen.style.top = "55%";
+
+	setTimeout(page45, vvfast);
 }
 
 function page45() {
 	whitebox.style.opacity = 0.3;
-	setTimeout(page46, fast);
+	setTimeout(page460, fast);
+}
+
+function page460() {
+	screen.style.left = "2%";
+	// screen.style.top = "55%";
+
+	setTimeout(page461, vvfast);
+}
+
+function page461() {
+	screen.style.left = "auto";
+	// screen.style.top = "55%";
+
+	setTimeout(page462, vfast);
+}
+
+function page462() {
+	screen.style.left = "-2%";
+	// screen.style.top = "55%";
+
+	setTimeout(page463, vvfast);
+}
+
+function page463() {
+	screen.style.left = "auto";
+	// screen.style.top = "55%";
+
+	setTimeout(page464, vvfast);
+}
+
+
+function page464() {
+	whitebox.style.opacity = 0.2;
+	setTimeout(page465, fast);
+}
+
+function page465() {
+	screen.style.left = "-2%";
+	screen.style.top = "48%";
+	// screen.style.top = "55%";
+
+	setTimeout(page46, vvfast);
 }
 
 function page46() {
-	whitebox.style.opacity = 0.2;
-	setTimeout(page47, fast);
+	screen.style.left = "auto";
+	screen.style.top = "50%";
+	// screen.style.top = "55%";
+
+	setTimeout(page47, vvfast);
 }
 
 function page47() {
@@ -332,29 +445,29 @@ function page49() {
 
 function page50() {
 	screen.style.backgroundColor = "#6da5b2";
-	screen.style.width = "1312px";
-	screen.style.height = "900px";
+	screen.style.width = "1120px";
+	screen.style.height = "750px";
 	setTimeout(page51, pace);
 }
 
 function page51() {
 	screen.style.backgroundColor = "#82b8c4";
-	screen.style.width = "1412px";
-	screen.style.height = "1000px";
+	screen.style.width = "1320px";
+	screen.style.height = "850px";
 	setTimeout(page52, pace);
 }
 
 function page52() {
 	screen.style.backgroundColor = "#9dd4e0";
-	screen.style.width = "1512px";
-	screen.style.height = "1000px";
+	screen.style.width = "1420px";
+	screen.style.height = "950px";
 	setTimeout(page53, pace);
 }
 
 function page53() {
 	screen.style.backgroundColor = "#b9e8ed";
-	screen.style.width = "1612px";
-	screen.style.height = "1000px";
+	screen.style.width = "1520px";
+	screen.style.height = "1050px";
 	setTimeout(page54, pace);
 }
 
@@ -362,8 +475,8 @@ function page54() {
 	screen.style.backgroundColor = "#d7f3f4";
 	document.getElementById("background").style.backgroundColor = "#d7f3f4";
 	document.body.style.backgroundColor = "#d7f3f4";
-	screen.style.width = "1712px";
-	screen.style.height = "1000px";
+	screen.style.width = "100%";
+	screen.style.height = "100%";
 	setTimeout(page55, pace);
 }
 
