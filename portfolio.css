@@ -53,13 +53,24 @@ p.statement {
 	text-align: center;
 }
 
-
+.caption {
+	text-align: center;
+	display: flex;
+	font-style: italic;
+}
 
 .row {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 	flex-wrap: wrap;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .row_block {
@@ -86,18 +97,19 @@ p.statement {
 	display: flex;
 	margin: auto;
 	width: 90%;
-	max-width: 1000px;
-	justify-content: space-between;
+	max-width: 1200px;
+	justify-content: center;
 	padding: 5px;
 
 }
 
 .navitem {
 	display: flex;
-	width: 32.5%;
+/*	width: 32.5%;*/
+	width: 400px;
 /*	height: 32px;*/
 	text-align: center;
-	margin: auto;
+	margin: 10px;
 	padding: 3px 0px;
 	background-color: #ededed;
 /*	background-color: #444444;*/
@@ -132,7 +144,7 @@ p.statement {
 #content {
 	display: flex;
 	width: 90%;
-	max-width: 1000px;
+	max-width: 1200px;
 	margin: auto;
 	justify-content: center;
 	padding: 30px 0px 0px 0px;
@@ -160,7 +172,7 @@ canvas {
 	position: relative;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: center;
 	margin-top: 15px;
 }
 
@@ -174,15 +186,10 @@ canvas {
 .project_icon {
 
 	display: flex;
-	width: 400px;
-	height: 400px;
-/*	width: 30%;*/
-
-/*	min-width: 220px;
-	height: 220px;
-	border-radius: 300px;*/
-	margin: 0px 5px 20px 5px;
-/*	border: solid 5px #ededed;*/
+	width: 278px;
+	height: 278px;
+	margin: 10px;
+/*	margin: 0px 5px 20px 5px;*/
 }
 
 .project_icon:hover {
@@ -193,8 +200,9 @@ canvas {
 }
 
 .thumbnail {
-	width: 130px;
-	height: 130px;
+	width: 100px;
+	height: 100px;
+
 }
 
 .thumbnail_holder {
@@ -205,6 +213,7 @@ canvas {
 .think_icon {
 	background-image: url("images/think_icon.png");
 	background-size: contain;
+	background
 }
 
 .ghost_icon {
@@ -238,7 +247,6 @@ canvas {
 
 .page {
 	display: none;
-
 	flex-direction: column;
 }
 
@@ -819,13 +827,6 @@ Main Components
 
   .navitem_title {
   	font-size: 16px;
-  }
-
-  .project_icon {
-/*  	width: 30%;*/
-  	width: 300px;
-	height: 300px;
-/*	margin: 0px 5px 20px 5px;*/
   }
 
   .cd-horizontal-timeline .events a {
