@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="../images/favicon.png" />
+	<link rel="stylesheet" href="../portfolio.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+	<script>
+		  WebFont.load({
+		    google: {
+		      families: ['Work Sans:200,300,500,600', 
+		      			'Nunito Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i',
+		      			'Ubuntu:300,300i,400,400i,500,500i,700,700i',
+		      			'Muli:300,300i,400,400i,500,500i',
+		      			'Open Sans:300,300i,400,400i,600,600i,700,700i']
+		    }
+		  });
+		</script>
+	<title>rachel kwak | teachbot</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript" src="../encoder.js"></script>
+
+	
+
+</head>
+
+<body>
+
+	<a href="../index.html#projects" class="navitem back-button projects-back">
+		<img src="../images/back_arrow.png" style="width: 20px; margin-right: 20px;"> back
+	</a>
+
+	<div class="navbar">
+		<a href="teachbot.html" class="navitem projects-back active">teachbot</a>
+		<a href="guitar.html" class="navitem projects-back">guitar</a>
+		<a href="techx.html" class="navitem projects-back">techx apply</a>
+		<a href="ghost.html" class="navitem projects-back">ghost</a>
+		<a href="markit.html" class="navitem projects-back">markit</a>
+		<a href="mic.html" class="navitem projects-back">mic</a>
+		<a href="think.html" class="navitem projects-back">think</a>
+	</div>
+
+	<div class="header"></div>
+	<div class="page-container">
+
+	<div class="page">
+		<div class="page-title">teachbot</div>
+			<div class="content">
+
+				<div class="project-overview">
+
+					<div class="overview-section">
+						<div class="thumbnail-container">
+							<img src="../images/teachbot_logo.png" class="thumbnail">
+						</div>
+						<p class="project-tag-info overview">TeachBot is a robotic educational tool and curriculum that teaches manufacturing workers about various aspects of robotics using a hands-on, robust learning interface and direct interaction with a robot. I worked in MIT's d'Arbeloff Laboratory directed by Professor Haruhiko Harry Asada as an undergraduate research assistant focused on design and front-end development for TeachBot learning modules.</p>
+					</div>
+
+					<div class="project-tag-section">
+						<p class="project-tag">role</p>
+						<p class="project-tag-info">
+							Educational Design, Graphic Design, Front-End Development, User Experience Design, User Interface Design
+						</p>
+					</div>
+
+					<div class="project-tag-section">
+						<p class="project-tag">date</p>
+						<p class="project-tag-info">Summer 2019</p>
+					</div>
+
+					<div class="project-tag-section">
+						<p class="project-tag">supervisor</p>
+						<p class="project-tag-info">
+							Nicholas Selby (MIT Ph.D Candidate)
+						</p>
+					</div>
+
+					<div class="project-tag-section">
+						<p class="project-tag">link</p>
+						<a class="project-tag-info external-link" target="_blank" href="http://meche.mit.edu/news-media/professor-harry-asada-awarded-2-million-grant-develop-robotic-educational-tool-%E2%80%9Cteach-bot">
+							http://meche.mit.edu/news-media/professor-harry-asada-awarded-2-million-grant-develop-robotic-educational-tool-"teach-bot
+						</a>
+					</div>
+
+				</div>
+
+				<div class="main-content">
+
+					<h1>the project</h1>
+
+						<h2>background</h2>
+
+						<div class="row">
+							<p class="text">While the number of manufacturing jobs is rapidly on the rise, the skilled work force able to fulfill them is not growing nearly as quickly. TeachBot aims to solve this problem through a hands-on curriculum in which learners interact directly with a robot arm and accessories as they follow along digital learning modules that are projected onto a surface. 
+							<br>Currently, a working prototype of the system is being deployed and tested with industry partners.</p>
+							<img src="../images/teachbot_setup.jpg" class="side" style="width: 452px; height: 340px;">
+						</div>
+
+						<h2>design process</h2>
+
+						<p class="text">The impact of TeachBot depends largely on how well the digital learning modules illustrate new concepts to the learners. These modules are comprised of educational graphics and user interface components, all of which should be intuitive so that they enhance the learning experience rather than simply contribute to the learner's cognitive load. In order to achieve the quality of work that both my supervisor and I wanted for my designs, we followed a design process that involved collaborative brainstorming and multiple iterations before finalization.</p>
+
+						<img src="../images/teachbot_process.png" class="center" style="max-width: 800px;">
+
+						<p class="text">For each of my design tasks, I used Adobe Illustrator to create graphics and Javascript for animated or interactive components. The graphics were integrated into the TeachBot learning modules through an HTML canvas.</p>
+
+					<h1>icon design</h1>
+
+						<h2>motivation</h2>
+
+						<p class="text">One of the TeachBot learning modules teaches about position and orientation in robotics. After a lesson about the concepts, the learner reviews them in an activity where they must move the robot arm to a specific position and orientation. They are able to change the position of the robot arm by pressing a white button on it, which unlocks the parts of the arm that let the learner freely move its position, and the orientation by pressing a grey button, which works correspondingly. The learner may switch between the two modes as often as needed to complete the task. 
+						<br>During learner testing of this activity, it was discovered that many struggled to understand what mode the robot arm was currently on. For example, one learner would press the grey button that corresponds with <i>orientation</i>, then try to move the robot's <i>position</i>, become frustrated when it doesn't behave as expected, and proceed to repeatedly press the incorrect button.
+						<br>From this observation, it was apparent that learners needed a visual indication of whether the robot was in position or orientation mode. Therefore, my task was to create a status indicator to show which mode the robot arm was in.</p>
+
+						<h2>ideation</h2>
+
+						<div class="row">
+							<img src="../images/teachbot_inspo.jpg" class="side" style="width: 200px; height: 200px;">
+							<p class="text">I started by designing icons that represented each of the two modes. This proved to be a challenging task because there were no precedents of icons or symbols representing position and orientation in a robotics context which I could use as a model. However, I was able to draw inspiration from an icon that is commonly seen in word processors to indicate page orientation. This icon suggests movement &mdash; the same concept behind my icons &mdash; by showing a "before" and an "after" stage with an arrow drawing the motion between.</p>
+						</div>
+
+						<div class="row" style="margin-bottom: 50px;">
+							<p class="text">For the format of the status indicator, Nick and I agreed that the two icons should be displayed together, with some way of distinguishing which one was currently engaged. After brainstorming several options for how to distinguish this, we decided that the most intuitive way was to colorize the active icon and grayscale the inactive one.</p>
+							<img src="../images/teachbot_ideation.png" class="side" style="width: 150px; height: 353px; display: inline-block;">
+						</div>
+
+						<h2>iteration</h2>
+
+						<p class="text">My initial design for the position icon illustrated a top view of the robot arm as its position shifts between two states. For my final design, however, I shifted the view to an angle that is closer to what the learner is seeing. This angle also adds depth perception that makes the illustration more understandable.</p>
+
+						<div class="row">
+
+							<div class="half">
+								<h2 style="text-align: center; margin: 20px 0px;">before</h2>
+								<img src="../images/teachbot_position1.png" style="width: 80%; max-width: 260px;" class="compare">
+							</div>
+
+							<div class="half">
+								<h2 style="text-align: center; margin: 20px 0px;">after</h2>
+								<img src="../images/teachbot_position2.png" style="width: 80%; max-width: 260px;" class="compare">
+							</div>
+
+						</div>
+
+						<h2>final design</h2>
+
+						<img src="../images/teachbot_pos_orien.gif" class="compact" style="padding: 0px 25px; margin: 0px auto; max-width: 600px;">
+
+					<h1>educational graphics</h1>
+
+						<h2>learning objective</h2>
+
+						<p class="text">Another learning module of TeachBot teaches basics about encoders in robotics. For this module, I designed an educational graphic that visualizes at a general scope the function of an encoder. The purpose of the graphic was to convey that an encoder is connected to a motor, encodes information such as the rotational angle of the motor, and represents this data to a computer through code.</p>
+
+						<h2>ideation</h2>
+
+						<p class="text">The biggest challenge in creating this graphic was distinguishing what is essential to the learner's understanding from what is not. Together, Nick and I decided on the critical pieces of information to include. In addition, we agreed that including an inside view of the robot to show where the encoder is located, and an animation to illustrate its function, would make for an effective graphic.</p>
+
+						<img src="../images/teachbot_essentials.png" class="center" style="max-width: 800px;">
+
+						<h2>iteration</h2>
+
+						<p class="text">Taking Nick's feedback on my initial design, I made several key changes to my rough initial prototype that led to my final animated educational graphic. The learning module containing this graphic was tested with learners and was received with positive reviews.</p>
+
+						<div class="row">
+
+							<div class="half">
+								<h2 style="text-align: center; margin: 20px 0px;">before</h2>
+								<img src="../images/teachbot_encoder_before.png" class="compact" style="height: 260px;">
+							</div>
+
+							<div class="half">
+								<h2 style="text-align: center; margin: 20px 0px;">after</h2>
+								<img src="../images/teachbot_encoder_after.png" class="compact" style="height: 260px;">
+							</div>
+
+						</div>
+
+						<h2>final design</h2>
+
+						<div class="canvas-container">
+							<canvas id="canvas_after" width= "800px" height="400px"></canvas>
+						</div>
+				</div>
+				<div class="page-footer"></div>
+
+			</div>
+		</div>
+
+
+	</div>
+	<div class="footer"></div>
+
+	<script>
+		draw_encoder_after();
+	</script>
+
+</body>
+
+</html>

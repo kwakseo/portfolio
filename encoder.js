@@ -190,11 +190,11 @@ function draw_encoder_after() {
 		ctx.stroke();
 	}
 
-	moving_part.src = "encoder_after/moving_part.png";
-	still_part.src = "encoder_after/still_part.png";
-	motor.src = "encoder_after/motor_body.png";
-	motor_circle.src = "encoder_after/motor_circle.png";
-	shaft.src = "encoder_after/shaft.png";
+	moving_part.src = "../encoder_after/moving_part.png";
+	still_part.src = "../encoder_after/still_part.png";
+	motor.src = "../encoder_after/motor_body.png";
+	motor_circle.src = "../encoder_after/motor_circle.png";
+	shaft.src = "../encoder_after/shaft.png";
 
 	var x = setInterval(drawMoving, 50);
 }

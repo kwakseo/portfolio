@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="../images/favicon.png" />
+	<link rel="stylesheet" href="../portfolio.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+	<script>
+		  WebFont.load({
+		    google: {
+		      families: ['Work Sans:200,300,500,600', 
+		      			'Nunito Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i',
+		      			'Ubuntu:300,300i,400,400i,500,500i,700,700i',
+		      			'Muli:300,300i,400,400i,500,500i',
+		      			'Open Sans:300,300i,400,400i,600,600i,700,700i']
+		    }
+		  });
+		</script>
+	<title>rachel kwak | ghost</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+	
+
+</head>
+
+<body>
+
+	<a href="../index.html#projects" class="navitem back-button projects-back">
+		<img src="../images/back_arrow.png" style="width: 20px; margin-right: 20px;"> back
+	</a>
+
+	<div class="navbar">
+		<a href="teachbot.html" class="navitem projects-back">teachbot</a>
+		<a href="guitar.html" class="navitem projects-back">guitar</a>
+		<a href="techx.html" class="navitem projects-back">techx apply</a>
+		<a href="ghost.html" class="navitem projects-back active">ghost</a>
+		<a href="markit.html" class="navitem projects-back">markit</a>
+		<a href="mic.html" class="navitem projects-back">mic</a>
+		<a href="think.html" class="navitem projects-back">think</a>
+	</div>
+	
+	<div class="header"></div>
+	
+	<div class="page-container">
+
+		<div class="page">
+			<div class="page-title">ghost</div>
+			<div class="content">
+				<div class="project-overview">
+
+						<div class="overview-section">
+							<div class="thumbnail-container">
+								<img src="../images/ghost_logo.png" class="thumbnail">
+							</div>
+							<p class="project-tag-info overview">Ghost is an online word game for friends that is based on the traditionally spoken game with the same name. It was developed for course 6.148: <i>Web Programming Class & Competition</i> within 22 days. Ghost was awarded Honorable Mention by course sponsors as well as People's Choice by voters.</p>
+						</div>
+
+						<div class="project-tag-section">
+							<p class="project-tag">role</p>
+							<p class="project-tag-info">
+								Game Design, Software Development, User Experience Design, User Interface Design
+							</p>
+						</div>
+
+						<div class="project-tag-section">
+							<p class="project-tag">date</p>
+							<p class="project-tag-info">January 2018</p>
+						</div>
+
+						<div class="project-tag-section">
+							<p class="project-tag">collaborators</p>
+							<p class="project-tag-info">
+								Calvin Phung (MIT '21), Lillian Bu (MIT '21)
+							</p>
+						</div>
+
+						<div class="project-tag-section">
+							<p class="project-tag">link</p>
+							<a class="project-tag-info external-link" target="_blank" href="http://ghostfriends.herokuapp.com">
+								ghostfriends.herokuapp.com
+							</a>
+						</div>
+				
+				</div>
+				<div class="main-content">
+
+					<h1>opportunity statement</h1>
+						<p class="text">The benefit of online games is that friends can play together regardless of distance. However, due to differences in levels of experience between friends, and high barriers for entry due to game complexity, friends often struggle to play with one another. Thus, our team focused on answering the following question:</p>
+						<p class="statement">How can we make a simple game that is <strong>fun and fair for everyone</strong>
+						<br>so that friends can play together online <strong>regardless of experience?</strong></p>
+
+					<h1>the game</h1>
+						<h2>rules</h2>
+						<p class="text">A game that came to mind was a word game from our childhood &mdash; Ghost. In it, players take turns adding one letter each to the end of a growing string. If a player completes a word that is not part of a longer one, or creates a string that is not part of any word, they get a strike. Five strikes and they become a ghost! 
+						<br>The beauty of the game is in its simplicity &mdash; it is easy to learn, and experienced players do not have a significant advantage against beginners. </p>
+
+						<h2>creating an online version</h2>
+						<p class="text">The benefit of bringing Ghost online was that we were able to enhance the traditional version with these features, which are only possible in a digital space:</p>
+						<img src="../images/ghost_benefits.png" class="center" style="width: 86%; max-width: 800px;">
+
+						<p class="text">Before starting development, we outlined the game flow as well as the structure of our React.js frontend.</p>
+
+						<div class="row compare">
+							<div class="column">
+								<h2>page flow</h2>
+								<img src="../images/ghost_pageflow.png" class="center" style="width: 80%; max-width: 300px;">
+							</div>
+							<div class="column">
+								<h2>component diagram</h2>
+								<img src="../images/ghost_components.png" class="center" style="width: 100%; max-width: 400px;">
+							</div>
+						</div>
+
+						<p style="margin: 50px 25px 80px 25px;">We used Socket.io to support realtime play, Node.js for our server, MongoDB to store player data, and Datamuse API to check the validity of letters.</p>
+
+					<h1>aesthetic</h1>
+
+						<p class="text">A key component to digital games is visual stimulation. Therefore, as our team's designer, I put special effort into designing <i>delightful</i> and <i>smooth</i> visual effects.
+						<br>The moving background was designed to encourage excitement as the game progresses. Since ghosts (<i>supposedly</i>) come out at night, I decided to make the background start from an orange sunset and scroll up to a starry deep violet &mdash; the longer a round goes, the deeper players go into the night.
+						<br>In addition, an easter egg was included for players who have already become ghosts to be able to interact by floating around on the screen and distracting ongoing players.</p>
+						
+						<div class="row compare">
+							<div class="column">
+								<h2>home</h2>
+								<img src="../images/ghost_home.gif" class="center" style="width: 100%; max-width: 400px;">
+							</div>
+							<div class="column">
+								<h2>create game</h2>
+								<img src="../images/ghost_create.gif" class="center" style="width: 100%; max-width: 400px;">
+							</div>
+						</div>
+
+						<div class="row compare">
+							<div class="column">
+								<h2>game play</h2>
+								<img src="../images/ghost_play.gif" class="center" style="width: 100%; max-width: 400px;">
+							</div>
+							<div class="column">
+								<h2>easter egg</h2>
+								<img src="../images/ghost_easteregg.gif" class="center" style="width: 100%; max-width: 400px;">
+							</div>
+						</div>
+
+					<h1>iterative design</h1>
+
+						<p class="text">The final design &mdash; from the layout of the game to the shape of the clouds &mdash; is a culmination of many incremental changes made based on constant play testing and feedback acquired from players, teammates, and mentors.</p>
+
+						<div class="column">
+							<h2>layout</h2>
+							<div id="slider" class="beer-slider" data-beer-label="final" style="display: block; width: 600px; margin: auto;">
+								<img src="../images/ghost_layout_new.png" alt="">
+								<div class="beer-reveal" data-beer-label="initial">
+								   <img src="../images/ghost_layout_old.png" alt="">
+								</div>
+							</div>
+						</div>
+
+						<div class="column">
+							<h2>background</h2>
+							<div class="row compare">
+								<div id="slider" class="beer-slider" data-beer-label="final" style="display: block; width: 450px; margin: 0px 25px;">
+									<img src="../images/ghost_clouds_new.png" alt="">
+									<div class="beer-reveal" data-beer-label="initial">
+									   <img src="../images/ghost_clouds_old.png" alt="">
+									</div>
+								</div>
+
+
+								<div id="slider" class="beer-slider" data-beer-label="final" style="display: block; width: 450px; margin: 0px 25px;">
+									<img src="../images/ghost_stars_new.png" alt="">
+									<div class="beer-reveal" data-beer-label="initial">
+									   <img src="../images/ghost_stars_old.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row compare">
+							<div class="column">
+								<h2>logo</h2>
+								<div id="slider" class="beer-slider" data-beer-label="final" style="display: block; width: 350px; margin: 0px 25px;">
+									<img src="../images/ghost_icon_new.png" alt="">
+									<div class="beer-reveal" data-beer-label="initial">
+									   <img src="../images/ghost_icon_old.png" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="column">
+								<h2>gradient</h2>
+								<div id="slider" class="beer-slider" data-beer-label="final" style="display: block; width: 350px; margin: 0px 25px;">
+									<img src="../images/ghost_gradient_new.png" alt="">
+									<div class="beer-reveal" data-beer-label="initial">
+									   <img src="../images/ghost_gradient_old.png" alt="">
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="column">
+							<h2>screen</h2>
+							<div id="slider" class="beer-slider" data-beer-label="final" style="display: block; width: 850px; margin: auto;">
+								<img src="../images/ghost_screen_new.png" alt="">
+								<div class="beer-reveal" data-beer-label="initial">
+								   <img src="../images/ghost_screen_old.png" alt="">
+								</div>
+							</div>
+						</div>
+
+						<p class="text">All icons and graphics were created using Adobe Illustrator.</p>
+
+				</div>
+				<div class="page-footer"></div>
+			</div>
+		</div>
+	</div>
+	<div class="footer"></div>
+	<script>
+	    $.fn.BeerSlider = function ( options ) {
+		    options = options || {};
+		    return this.each(function() {
+		      new BeerSlider(this, options);
+		    });
+		  };
+		  $('.beer-slider').BeerSlider({start: 50});
+
+		var amount = '';
+
+		function scroll() {
+		    $('#timeline_container').animate({
+		        scrollLeft: amount
+		    }, 100, 'linear',function() {
+		        if (amount != '') {
+		            scroll();
+		        }
+		    });
+		}
+
+		$('#timeline_right').hover(function() {
+		    amount = '+=44';
+		    scroll();
+		}, function() {
+		    amount = '';
+		});
+
+		$('#timeline_left').hover(function() {
+		    amount = '-=44';
+		    scroll();
+		}, function() {
+		    amount = '';
+		});
+
+	</script>
+
+</body>
+
+</html>
