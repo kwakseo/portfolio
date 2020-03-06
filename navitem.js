@@ -18,7 +18,7 @@ $(document).ready(function(){
       
       // If the divPosition is less the the currentScroll position the div we are testing has moved above the window edge.
       // the -1 is so that it includes the div 1px before the div leave the top of the window.
-      if( divPosition - 50 < currentScroll ){
+      if( divPosition - 200 < currentScroll ){
         // We have either read the section or are currently reading the section so we'll call it our current section
         $currentSection = $(this);
         
@@ -29,6 +29,8 @@ $(document).ready(function(){
       var id = $currentSection.attr('id');
      $('a').removeClass('active');
      $('[href="#'+id+'"]').addClass('active');
+     $(".page-title").removeClass('active');
+     $("#"+id+"-page-title").addClass('active');
       
     })
 
