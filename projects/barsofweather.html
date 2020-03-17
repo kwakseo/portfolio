@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="../images/favicon.png" />
+	<link rel="stylesheet" href="../portfolio.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+	<link rel="stylesheet" href="../beerslider/dist/BeerSlider.css" />
+	<script src="../beerslider/dist/BeerSlider.js"></script>
+	<script>
+		  WebFont.load({
+		    google: {
+		      families: ['Work Sans:200,300,500,600', 
+		      			'Nunito Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i',
+		      			'Ubuntu:300,300i,400,400i,500,500i,700,700i',
+		      			'Muli:300,300i,400,400i,500,500i',
+		      			'Open Sans:300,300i,400,400i,600,600i,700,700i']
+		    }
+		  });
+		</script>
+	<title>rachel kwak | bars of weather</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	
+
+</head>
+
+<body>
+
+	<a href="../index.html#projects" class="navitem back-button projects-back">
+		<img src="../images/back_arrow.png" style="width: 20px; margin-right: 20px;">
+	</a>
+
+	<!-- <div class="navbar">
+		<a href="teachbot.html" class="navitem projects-back">teachbot</a>
+		<a href="guitar.html" class="navitem projects-back">guitar</a>
+		<a href="techx.html" class="navitem projects-back">techx apply</a>
+		<a href="ghost.html" class="navitem projects-backe">ghost</a>
+		<a href="markit.html" class="navitem projects-back">markit</a>
+		<a href="mic.html" class="navitem projects-back">mic</a>
+		<a href="think.html" class="navitem projects-back">think</a>
+		<a href="barsofweather.html" class="navitem projects-back active">bars of weather</a>
+	</div> -->
+	
+	<div class="header"></div>
+	
+	<div class="page-container">
+
+		<div class="page">
+			<div class="page-title active">bars of weather</div>
+			<div class="content">
+				<div class="project-overview">
+
+						<div class="overview-section">
+							<div class="thumbnail-container">
+								<img src="../images/barsofweather_logo.png" class="thumbnail">
+							</div>
+							<p class="project-tag-info overview">Bars of Weather is a mobile app that displays thorough information about the weather throughout the day in an easily digestable format. It was designed and developed as an exercise for course 4.032: Design Studio in Information and Visualization.</p>
+						</div>
+
+						<div class="project-tag-section">
+							<p class="project-tag">skills</p>
+							<p class="project-tag-info">
+								Data Visualization, Mobile App Design, Software Development, User Experience Design, User Interface Design
+							</p>
+						</div>
+
+						<div class="project-tag-section">
+							<p class="project-tag">date</p>
+							<p class="project-tag-info">February 2020</p>
+						</div>
+				
+				</div>
+				<div class="main-content">
+
+					<h1>iteration 1</h1>
+						<p class="text">Bars of Weather was designed and developed for an open-ended data visualization exercise, for which the objective was to create a mobile app that displays useful information about the weather in a practical format.
+						<br>For my first iteration, I created a histogram to show the change in temperature throughout a day. I also added placeholders for icons to symbolize various aspects of the weather that would be helpful for daily use, such as humidity, wind, and precipitation. Since it's particularly useful to know what specific times during a day there will be precipitation, I included circular indicators next to the histogram to show this.
+						<br>For somewhat practical, but mostly aesthetic appeal, I programmed the background color to be a light blue during the day, and dark blue at night. Additionally, I added a semicircle at the top of the screen that is more opaque the cloudier it is outside.</p>
+
+						<div class="column">
+							<div class="phone-frame">
+								<img src="../images/bow1.png" class="center" style="width: 100%; max-width: 350px;">
+							</div>
+						</div>
+
+						<h2>critique</h2>
+							<p class="text">The orientation of the temperature histogram makes good use of space in a mobile app. The histogram provides an intuitive visual representation of the temperature changes throughout the day that can be perceived without having to read the numbers themselves.
+							<br>Although the histogram itself is easy to read, the addition of icons representing various other aspects of the weather makes this interface less intuitive. The circles representing precipitation can easily go unnoticed, and even if they're seen, it's not immediately clear what they represent. The three different shapes at the top of the screen are distracting, rather than practical.</p>
+
+					<h1>iteration 2</h1>
+
+						<p class="text">The main problem with my first iteration was that there were too many, incohesive representations being used for different aspects of the weather: bars for temperature, color for time of day, opacity for cloud cover, and icons for other aspects of the weather. Therefore, I pivoted my design to use bars &mdash; and only bars  &mdash; to represent all aspects of the weather. I clarified my audience as the practical weather app user who wants to be well-prepared for the day.
+						<br>Because my new design represents a lot of information, I added buttons at the bottom of the screen that allow the user to look at one specific aspect of the weather at a time. Additionally, I decided to display specific numbers next to the colored bars only if they were significant; for example, if it is particularly windy, or chance of precipitation is above 50%.</p>
+
+						<div class="row compare">
+							<div class="column">
+								<h2>comprehensive view</h2>
+								<div class="phone-frame">
+									<img src="../images/bow2a.png" class="center" style="width: 100%; max-width: 350px;">
+								</div>
+							</div>
+							<div class="column">
+								<h2>specific view</h2>
+								<div class="phone-frame">
+									<img src="../images/bow2b.png" class="center" style="width: 100%; max-width: 350px;">
+								</div>
+							</div>
+						</div>
+
+						<h2>critique</h2>
+							<p class="text">This iteration was a huge improvement from before in that it conveys the same, large amount of information in a more practical way. 
+							<br>However, the default, comprehensive view is quite overwhelming. Because there are so many stacked colored bars on the left, it's difficult to process all of what they're conveying at once.</p>
+
+					<h1>final design</h1>
+
+						<p class="text">For my final iteration, I made two key changes from my previous design that drastically improved the app experience. 
+						<br>First, I decided to only have colored bars at full opacity if they represented significant values based on weather thresholds found online; for example, if the wind is faster than 22mph, or the chance of precipitation is at least 50%. 
+						<br>Second, I switched the key information &mdash; temperature readings and the overview ("drizzle") &mdash; over to the left side of the screen, while more specific weather details were switched over to the right. This was a choice made based on my target audience for this version of my app, which is an English-reading audience that reads left to right.</p>
+
+						<div class="row compare">
+							<div class="column">
+								<h2>comprehensive view</h2>
+								<div class="phone-frame">
+									<img src="../images/bow3a.png" class="center" style="width: 100%; max-width: 350px;">
+								</div>
+							</div>
+							<div class="column">
+								<h2>specific view</h2>
+								<div class="phone-frame">
+									<img src="../images/bow3b.png" class="center" style="width: 100%; max-width: 350px;">
+								</div>
+							</div>
+						</div>
+
+						<h2>next steps</h2>
+							<p class="text">After multiple iterations, my weather app has developed into a much more sleek, practical, and intuitive experience. For future directions, I would like to add more options for personalization. For example, options for switching between temperature scales, and customizing the comprehensive view of the app to display only the aspects of weather that the user wants to see. </p>
+
+				</div>
+				<div class="page-footer"></div>
+			</div>
+		</div>
+	</div>
+	<div class="footer"></div>
+	<script>
+	    $.fn.BeerSlider = function ( options ) {
+		    options = options || {};
+		    return this.each(function() {
+		      new BeerSlider(this, options);
+		    });
+		  };
+		  $('.beer-slider').BeerSlider({start: 50});
+
+		var amount = '';
+
+		function scroll() {
+		    $('#timeline_container').animate({
+		        scrollLeft: amount
+		    }, 100, 'linear',function() {
+		        if (amount != '') {
+		            scroll();
+		        }
+		    });
+		}
+
+		$('#timeline_right').hover(function() {
+		    amount = '+=44';
+		    scroll();
+		}, function() {
+		    amount = '';
+		});
+
+		$('#timeline_left').hover(function() {
+		    amount = '-=44';
+		    scroll();
+		}, function() {
+		    amount = '';
+		});
+
+	</script>
+
+</body>
+
+</html>
